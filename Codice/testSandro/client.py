@@ -14,11 +14,8 @@ def getInfoCPU():
         return infoCpuOsDarwin
     elif platform.system() == "Linux":
         comandoCpu = "cat /proc/cpuinfo"
-        infoCpu = subprocess.check_output(comandoCpu, shell=True).decode().strip()
-        for riga in infoCpu.split("\n"):
-            if "model name" in riga:
-                infoCpuOsLinux = re.sub(".*model name.*:", "", riga, 1)
-                return infoCpuOsLinux
+        infoCpuOsLinux = subprocess.check_output(comandoCpu, shell=True).decode().strip()
+        return infoCpuOsLinux
     return ""
 
 
