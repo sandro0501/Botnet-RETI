@@ -1,10 +1,6 @@
 from socket import *
-import platform
+import os, platform, subprocess, re
 import time
-serverName = 'localhost'
-serverPort = 12000
-clientSocket = socket(AF_INET, SOCK_STREAM)
-x=1
 
 def connessione():
     connesso = False
@@ -50,6 +46,34 @@ def ricevi_messaggio():
             clientSocket.close()
             clientSocket = socket(AF_INET, SOCK_STREAM)
             connessione()
+
+def getInfoSO():
+    sistema = platform.system()
+    if (sistema == "Windows") :
+        release, version, csd, ptype = platform.win32_ver()
+        sentence = sistema + ", " + release + ", " + version + ", " + csd + ", " + ptype
+        return sentence
+    else:
+        return ""
+
+def getInfoCPU():
+    if platform.system() == "Windows":
+        infoCpuOsWindows = platform.processor()
+        return infoCpuOsWindows
+    elif platform.system() == "Darwin":
+        os.environ['PATH'] = os.environ['PATH'] + os.pathsep + '/usr/sbin'
+        comandoCpu = "sysctl -n machdep.cpu.brand_string"
+        infoCpuOsDarwin = subprocess.check_output(comandoCpu).strip()
+        return infoCpuOsDarwin
+    elif platform.system() == "Linux":
+        comandoCpu = "cat /proc/cpuinfo"
+        infoCpuOsLinux = subprocess.check_output(comandoCpu, shell=True).decode().strip()
+        return infoCpuOsLinux
+    return ""
+
+serverName = 'localhost'
+serverPort = 12000
+clientSocket = socket(AF_INET, SOCK_STREAM)
             
 connessione()
 while True:
@@ -59,11 +83,9 @@ while True:
         case "0":
             break
         case "1":
-            sistema = platform.system()
-            if (sistema == "Windows") :
-                release, version, csd, ptype = platform.win32_ver()
-                sentence = sistema + ", " + release + ", " + version + ", " + csd + ", " + ptype
-                invia_messaggio(sentence)
+            invia_messaggio(getInfoSO())
+        case "2":
+            invia_messaggio(getInfoCPU())
 
 print("Fine")
 clientSocket.close()
