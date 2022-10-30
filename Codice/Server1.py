@@ -22,7 +22,7 @@ def invia_messaggio(messaggio):
 def ricevi_messaggio():
     global connectionSocket
     try:
-        messaggio = connectionSocket.recv(1024).decode()
+        messaggio = connectionSocket.recv(4096).decode()
         print('Hai ricevuto:', messaggio)
     except Exception as e:
         #Il client si è disconnesso nel mentre, tentiamo la riconnessione a un bot
@@ -33,11 +33,12 @@ def ricevi_messaggio():
         print ("Messaggio non ricevuto, bot master connesso ad un bot con indirizzo" + str(addr))
 
 def menu():
-    print("Scegliere l'operazione da eseguire:\n"
+    print("\nScegliere l'operazione da eseguire:\n"
           +"0: termina la connessione\n"
           +"1: ricevi informazioni sul sistema operativo\n"
           +"2: ricevi informazioni sul processore\n"
-          +"3: entra in controllo della bash\n")
+          +"3: ricevi informazioni sul tempo d'avvio\n"
+          +"4: entra in controllo della bash\n")
     return input()
     
 while True:
