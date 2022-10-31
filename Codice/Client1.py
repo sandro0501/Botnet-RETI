@@ -70,7 +70,22 @@ def getInfoCPU():
     intestazione = "\n === INFORMAZIONI SULLA CPU === \n"
     if platform.system() == "Windows":
         infoCpuOsWindows = platform.processor()
-        return intestazione+infoCpuOsWindows
+        core_fisici_cpu = psutil.cpu_count(logical=False)
+        core_totali_cpu = psutil.cpu_count(logical=True)
+        frequenza_cpu = psutil.cpu_freq()
+        max_frequenza_cpu = frequenza_cpu.max
+        min_frequenza_cpu = frequenza_cpu.min
+        frequenza_cpu_corrente = frequenza_cpu.current
+        percentuale_uso_cpu = psutil.cpu_percent()
+        sentence = f"Processore: {infoCpuOsWindows}" + "\n" + \
+                   f"Core fisici CPU: {core_fisici_cpu}" + "\n" + \
+                   f"Core totali CPU: {core_totali_cpu}" + "\n" + \
+                   f"Frequenza max. CPU {max_frequenza_cpu:.2f}" + " Mhz" + "\n" + \
+                   f"Frequenza min. CPU: {min_frequenza_cpu:.2f}" + " Mhz" + "\n" + \
+                   f"Frequenza CPU corrente: {frequenza_cpu_corrente:.2f}" + " Mhz" + "\n" + \
+                   f"Percentuale uso CPU: {percentuale_uso_cpu}" + "%" + "\n"
+        return intestazione+sentence
+
     elif platform.system() == "Darwin":
         os.environ['PATH'] = os.environ['PATH'] + os.pathsep + '/usr/sbin'
         comandoCpu = "sysctl -n machdep.cpu.brand_string"
@@ -94,6 +109,8 @@ def getInfoBootTime():
     secondi = boot_time.second
     sentence = f"Il sistema è attivo dal giorno {giorno}/{mese}/{anno} dalle ore {ore}:{minuti}:{secondi} "
     return intestazione+sentence
+
+
 
 
 """
