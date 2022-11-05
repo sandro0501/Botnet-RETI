@@ -163,10 +163,13 @@ def getDiskInfo():
 def executeShellCommand(cmd):
     #Prendiamo ogni componente del comando per distinguere tra cd e altri comandi
     global cwd
+    carattere_separatore = '/'
+    if (platform.system() == "Windows"):
+        carattere_separatore = '\\'
     split_cmd = cmd.split()
     if split_cmd[0] == "cd":
         #Tentativo per cambiamento directory assoluta
-        if split_cmd[1].find('\\') == 0:
+        if split_cmd[1].find('/') == 0:
             try:
                 os.chdir(''.join(split_cmd[1]))
             except FileNotFoundError as e:
@@ -177,8 +180,8 @@ def executeShellCommand(cmd):
         else: 
         #Tentativo per cambiamento directory relativa
             try:
-                os.chdir(cwd+'\\'+''.join(split_cmd[1]))
-            except FileNotFoundError as e:
+                os.chdir(cwd+'/'+''.join(split_cmd[1]))
+            except Exception as e:
                 #se c'e un errore lo restituiamo in output
                 output = str(e)
             else:

