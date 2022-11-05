@@ -163,9 +163,6 @@ def getDiskInfo():
 def executeShellCommand(cmd):
     #Prendiamo ogni componente del comando per distinguere tra cd e altri comandi
     global cwd
-    carattere_separatore = '/'
-    if (platform.system() == "Windows"):
-        carattere_separatore = '\\'
     split_cmd = cmd.split()
     if split_cmd[0] == "cd":
         #Tentativo per cambiamento directory assoluta
