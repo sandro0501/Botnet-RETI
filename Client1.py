@@ -169,23 +169,25 @@ def executeShellCommand(cmd):
     split_cmd = cmd.split()
     if split_cmd[0] == "cd":
         #Tentativo per cambiamento directory assoluta
-        if split_cmd[1].find('/') == 0:
-            try:
-                os.chdir(''.join(split_cmd[1]))
-            except FileNotFoundError as e:
-                #se c'e un errore lo restituiamo in output
-                output = str(e)
-            else:
-                output = ''
-        else: 
-        #Tentativo per cambiamento directory relativa
-            try:
-                os.chdir(cwd+'/'+''.join(split_cmd[1]))
-            except Exception as e:
-                #se c'e un errore lo restituiamo in output
-                output = str(e)
-            else:
-                output = ''
+        if (len(split_cmd)!=2): output = "Errore"
+        else:
+            if split_cmd[1].find('/') == 0:
+                try:
+                    os.chdir(''.join(split_cmd[1]))
+                except FileNotFoundError as e:
+                    #se c'e un errore lo restituiamo in output
+                    output = str(e)
+                else:
+                    output = ''
+            else: 
+            #Tentativo per cambiamento directory relativa
+                try:
+                    os.chdir(cwd+'/'+''.join(split_cmd[1]))
+                except Exception as e:
+                    #se c'e un errore lo restituiamo in output
+                    output = str(e)
+                else:
+                    output = ''
     else: 
         output = subprocess.getoutput(cmd)
     cwd = os.getcwd()
