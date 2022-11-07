@@ -1,7 +1,7 @@
 from socket import *
 serverPort = 12003
  #Dimensione del buffer, in questo caso il messaggio ricevuto puo essere al piu 4kb ma possiamo ovviamente aumentare nel caso
-BUFFER_SIZE = 1024 * 4
+BUFFER_SIZE = 1024 * 32
 serverSocket = socket(AF_INET,SOCK_STREAM)
 serverName = gethostbyname(gethostname())
 serverSocket.bind(('',serverPort))
@@ -57,7 +57,8 @@ def menu():
           +"5: ricevi informazioni sul disco\n"
           +"6: ricevi informazioni sulla scheda di rete e interfacce di rete\n"
           +"7: entra in controllo della bash\n"
-          +"8: riepilogo informazioni\n")
+          +"8: pulisci il file di log\n"
+          +"9: riepilogo informazioni\n")
     return input()
     
 while True:
@@ -86,6 +87,9 @@ while True:
                         f.close()
                     else: queryRes = "Errore"
                     print(queryRes + "\n")
+        elif comando == '8':
+            f = open("Info.txt", "a")
+            f.truncate(0)
         else:
             invia_messaggio(comando)
             if (comando != "0"):
