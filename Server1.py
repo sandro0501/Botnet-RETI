@@ -26,7 +26,11 @@ def invia_messaggio(messaggio):
 
 def ricevi_stampa_messaggio():
     global connectionSocket
-    print(str(ricevi_messaggio()))
+    messaggio = str(ricevi_messaggio())
+    f = open("Info.txt", "a")
+    f.write(messaggio)
+    f.close()
+    print(messaggio)
         
 def ricevi_messaggio():
     global connectionSocket
@@ -72,7 +76,14 @@ while True:
                     if (not(invia_messaggio(f"7<sep>{cmd}"))): break
                     output = ricevi_messaggio()
                     risultato = output.split('<sep>')
-                    if (len(risultato)==2): queryRes, cwd = output.split('<sep>')
+                    if (len(risultato)==2):
+                        queryRes, cwd = output.split('<sep>')
+                        f = open("Info.txt", "a")
+                        f.write("Comando inviato: " + cmd)
+                        f.write("\nRisultato:\n")
+                        f.write (queryRes)
+                        f.write("\n\n\n")
+                        f.close()
                     else: queryRes = "Errore"
                     print(queryRes + "\n")
         else:
