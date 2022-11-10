@@ -88,7 +88,7 @@ def getCPUInfo():
         info_cpu_os_darwin = subprocess.check_output(comando_cpu).strip()
         return intestazione+info_cpu_os_darwin
     elif platform.system() == "Linux":
-        comando_cpu = "cat /proc/cpuinfo"
+        comando_cpu = "cat /proc/cpuinfo | grep -v '^flags'"
         info_cpu_os_linux = subprocess.check_output(comando_cpu, shell=True).decode().strip()
         return intestazione+info_cpu_os_linux
     return ""

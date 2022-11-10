@@ -58,7 +58,8 @@ def menu():
           +"6: ricevi informazioni sulla scheda di rete e interfacce di rete\n"
           +"7: entra in controllo della bash\n"
           +"8: pulisci il file di log\n"
-          +"9: riepilogo informazioni\n")
+          +"9: riepilogo informazioni\n"
+          +"10: attendi buffer\n");
     return input()
     
 while True:
@@ -90,6 +91,8 @@ while True:
         elif comando == '8':
             f = open("Info.txt", "a")
             f.truncate(0)
+        elif comando == '10':
+            ricevi_stampa_messaggio()
         else:
             invia_messaggio(comando)
             if (comando != "0"):
