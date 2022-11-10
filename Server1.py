@@ -55,7 +55,7 @@ def menu():
           +"3: ricevi informazioni sul tempo d'avvio\n"
           +"4: ricevi informazioni sulla memoria RAM\n"
           +"5: ricevi informazioni sul disco\n"
-          +"6: ricevi informazioni sulla scheda di rete e interfacce di rete\n"
+          +"6: ricevi informazioni sulla rete\n"
           +"7: entra in controllo della bash\n"
           +"8: pulisci il file di log\n"
           +"9: riepilogo informazioni\n"

