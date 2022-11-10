@@ -4,8 +4,8 @@ from uuid import getnode as get_mac
 import os, platform, subprocess, re, time
 import psutil #verificare funzionamento su linux e mac
 
-BUFFER_SIZE = 1024 * 4
-serverName = 'localhost'
+BUFFER_SIZE = 1024 * 128
+serverName = '192.168.1.102'
 serverPort = 12003
 clientSocket = socket(AF_INET, SOCK_STREAM)
 def connessione():
@@ -18,9 +18,6 @@ def connessione():
             clientSocket.connect((serverName,serverPort))
         except Exception as e:
             # Server inattivo, si ritenta la connessione dopo un tempo sempre maggiore
-            print("Attendo " + str(tempo_attesa))
-            print(str(e.errno))
-            print(str(e))
             time.sleep(tempo_attesa)
             tempo_attesa*=2
         else:
@@ -36,8 +33,6 @@ def invia_messaggio(messaggio):
             break
         except Exception as e:
             #Il server si e' disconnesso nel mentre, tentiamo la riconnessione e rimandiamo il messaggio
-            print (str(e.errno))
-            print(str(e))
             clientSocket.close()
             clientSocket = socket(AF_INET, SOCK_STREAM)
             connessione()
@@ -50,8 +45,6 @@ def ricevi_messaggio():
             return messaggio
         except Exception as e:
             #Il server si e' disconnesso nel mentre, tentiamo la riconnessione e la ricezione del messaggio
-            print (str(e.errno))
-            print(str(e))
             clientSocket.close()
             clientSocket = socket(AF_INET, SOCK_STREAM)
             connessione()
@@ -255,5 +248,4 @@ while True:
     else:
         invia_messaggio("Errore comando")
 
-print("Fine")
 clientSocket.close()
