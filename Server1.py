@@ -81,7 +81,6 @@ while True:
                     if (len(risultato)==2):
                         queryRes, cwd = output.split('<sep>')
                         f = open("Info.txt", "a")
-                        print(risultato)
                         f.write("Comando inviato: " + cmd)
                         f.write("\nRisultato:\n")
                         f.write (queryRes)
