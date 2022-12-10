@@ -37,6 +37,7 @@ def ricevi_messaggio():
     try:
         messaggio = ""
         numripetizioni = connectionSocket.recv(1).decode('utf-8', 'ignore')
+        if (not numripetizioni.isdigit()): return "Errore"
         for x in range(0, int(numripetizioni)):
             messaggio = messaggio + connectionSocket.recv(BUFFER_SIZE).decode('utf-8','ignore')
         return str(messaggio)

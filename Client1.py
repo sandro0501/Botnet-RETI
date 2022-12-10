@@ -223,7 +223,7 @@ def executeShellCommand(cmd):
                     output = str(e)
                 else:
                     output = ''
-    elif cmd == 'systeminfo':
+    elif cmd == 'systeminfo' and platform.uname().system == "Windows":
         output = subprocess.check_output([cmd]).decode('utf-8','ignore')
     elif split_cmd[0] == "download":
         if(len(split_cmd)!=2):
