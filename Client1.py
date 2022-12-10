@@ -32,8 +32,8 @@ def invia_messaggio(messaggio):
     global clientSocket
     while True:
         try:
-#           numripetizioni = math.ceil((len(messaggio)/BUFFER_SIZE))
-#           clientSocket.send(str(numripetizioni).encode('utf-8','ignore'))
+            numripetizioni = math.ceil((len(messaggio)/BUFFER_SIZE))
+            clientSocket.send(str(numripetizioni).encode('utf-8','ignore'))
             clientSocket.send(messaggio.encode('utf-8','ignore'))
             break
         except Exception as e:

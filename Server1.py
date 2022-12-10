@@ -39,9 +39,9 @@ def ricevi_messaggio():
     global connectionSocket
     try:
         messaggio = ""
-        #numripetizioni = connectionSocket.recv(1).decode('utf-8', 'ignore')
-        #for x in range(0, int(numripetizioni)):
-        messaggio = messaggio + connectionSocket.recv(BUFFER_SIZE).decode('utf-8','ignore')
+        numripetizioni = connectionSocket.recv(1).decode('utf-8', 'ignore')
+        for x in range(0, int(numripetizioni)):
+            messaggio = messaggio + connectionSocket.recv(BUFFER_SIZE).decode('utf-8','ignore')
         return str(messaggio)
     except Exception as e:
         #Il client si e' disconnesso nel mentre, tentiamo la riconnessione a un bot
