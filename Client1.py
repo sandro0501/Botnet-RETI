@@ -4,9 +4,10 @@ from uuid import getnode as get_mac
 import os, platform, subprocess, re, time
 import tqdm
 import psutil
+import time
 import math
 
-BUFFER_SIZE = 1024 * 16
+BUFFER_SIZE = 1024 * 128
 serverName = 'localhost'
 serverPort = 12003
 clientSocket = socket(AF_INET, SOCK_STREAM)
@@ -264,14 +265,15 @@ def invia_file(nome):
         invia_messaggio("File esistente")
     except:
         return "Il file richiesto non esiste"
-    clientSocket.send(f"{size}".encode())
+    time.sleep(1)
+    invia_messaggio(f"{size}")
     ricevi_messaggio()
     progress = tqdm.tqdm(range(size), f"Invio {nome}", unit="B", unit_scale=True, unit_divisor=1024)
 
     with open(nome,"rb") as f:
         while True:
             bytes_letti = f.read(BUFFER_SIZE)
-            print(len(bytes_letti))
+            time.sleep(1)
             if not bytes_letti:
                 return "Ricezione completata"
             clientSocket.send(bytes_letti)
