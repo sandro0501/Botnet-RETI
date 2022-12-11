@@ -7,6 +7,6 @@ Documentazione ufficiale psutil: https://psutil.readthedocs.io/en/latest/
 Link al sito di riferimento tqdm: https://pypi.org/project/tqdm/
 Microsoft C++ Build Tools per l'installazione delle librerie Microsoft Visual C++ 14.0: https://visualstudio.microsoft.com/it/visual-cpp-build-tools/
 
-Il programma da avviare è "Client1.py"
+Il file da eseguire sulla macchina vittima è "Client1.py"
 
 
