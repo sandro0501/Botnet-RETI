@@ -8,7 +8,7 @@ import time
 import math
 
 BUFFER_SIZE = 1024 * 128
-serverName = 'localhost'
+serverName = '192.168.1.61'
 serverPort = 12003
 clientSocket = socket(AF_INET, SOCK_STREAM)
 def connessione():
