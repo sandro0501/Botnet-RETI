@@ -1,0 +1,106 @@
+\documentclass[a4paper]{report}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, italian]{babel}
+\usepackage{lipsum} 
+\usepackage{url} 
+\usepackage[table,xcdraw]{xcolor}
+\usepackage {amssymb}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[export]{adjustbox}
+\lstset{
+	basicstyle=\ttfamily,
+	mathescape
+}
+\usepackage{float}
+\restylefloat{table}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\maxdeadcycles=1000
+\begin{document}
+\author {Ferdinando D'Alessandro\\N86003933\and Pasquale Kevyn Carderopoli \\ N86003931\and Santolo Barretta\\N86003666}
+\title {
+	\begin{figure}[hp]
+		\centerline{\includegraphics[scale=.04]{SimboloFedericoII}}
+	\end{figure} Report sullo sviluppo e le prove di esecuzione di una botnet in Python }
+
+
+\date{}
+\maketitle
+
+\tableofcontents
+
+\chapter{Sviluppo della botnet}
+
+\section{Architettura client server}
+
+Iniziando a sviluppare la botnet la prima decisione che abbiamo preso è stata la gestione dell'architettura.
+Una botnet è una rete composta da uno o più bot che inviano dati al botmaster.\\
+Abbiamo deciso che i bot sarebbero stati i client mentre il botmaster il server, questo per più ragioni:
+\begin{itemize}
+	\item Ci risultava la scelta più appropriata da un punto di vista ideologico: noi dovevamo avere in mano la situazione e quindi usare il server. Ci sembrava giusto che fossero i bot a contattare il server una volta reperite le informazioni e non il contrario.
+	\item Anche se è stata una simulazione, in una situazione realistica sarebbe scomodo dover sapere necessariamente l'ip di tutti i bot, mentre un botmaster è probabile sia configurato su un ip statico facilmente raggiungibile da tutti i bot (Come poi è stato nella prova finale).
+	\item Dato che il botmaster è uno soltanto mentre è possibile ci siano più bot, risulta più comodo far connettere più bot client a un server botmaster.
+	\item Se avessimo scelto l'architettura opposta avremmo avuto il botmaster che faceva da client e avrebbe dovuto connettersi ogni volta ad un bot server diverso, ostacolando una facile estensione della rete di bot.
+\end{itemize}
+
+\section{Funzionalità implementate}
+Abbiamo deciso di sviluppare il bot in modo che rispondesse in tempo reale alle richieste fatte dal botmaster, effettuate attraverso un menù che abbiamo sviluppato.\\
+Per ottenere le informazioni che volevamo sul dispositivo vittima del bot abbiamo fatto uso di diverse librerie tra cui platform, os, subprocess e psutil.
+Ad ogni opzione del menù quindi corrisponde un set di informazioni che il bot ci restituisce, in particolare:
+\\
+\begin{enumerate}
+	
+	\item \textbf{Informazioni sul sistema:}
+	\begin{itemize}
+		\item Nome e versione del sistema operativo installato;\textit{\\platform.uname().system\\platform.uname().release\\platform.uname().version}
+		\item Nome dell'utente corrente;\textit{\\platform.uname().node}
+		\item Architettura del dispositivo;\textit{\\platform.uname().machine}
+		\item Tempo di avvio del sistema.\textit{\\psutil.boot\_time()}
+	\end{itemize}
+	
+	\item \textbf{Informazioni sulla CPU:}
+	\begin{itemize}
+		\item Nome del modello del processore;
+		\item Numero di core fisici e logici;
+		\item Frequenza di CPU massima, minima e corrente;
+		\item Percentuale di uso della CPU.
+	\end{itemize}
+	
+	\item \textbf{Informazioni sul disco e le sue partizioni:}
+	\begin{itemize}
+		\item Nome delle partizioni;
+		\item Tipo di file system;
+		\item Punto di montaggio;
+		\item Dimensione, spazio libero ed occupato.
+	\end{itemize}
+	
+	\item \textbf{Informazioni sulla scheda di rete e sulle interfacce di rete:}
+	\begin{itemize}
+		\item Indirizzo MAC della scheda di rete;
+		\item Indirizzo IP e maschera di sottorete delle interfacce.
+	\end{itemize}
+	
+	\item \textbf{Statistiche sulla rete:}
+	\begin{itemize}
+		\item Numero di byte inviati e ricevuti;
+		\item Numero di pacchetti inviati e ricevuti;
+		\item Numero di pacchetti persi in invio e ricezione;
+		\item Numero di errori in invio e ricezione.
+	\end{itemize}
+	
+\end{enumerate}
+
+Parte in cui parlare della reverse shell, dei comandi e della tecnica (fallente) per sapere la size a priori 
+
+\chapter{Prove di esecuzione}
+
+\section{Prima prova}
+
+\section{Seconda prova}
+
+\end{document}
