@@ -39,7 +39,7 @@
 \section{Architettura client server}
 
 Iniziando a sviluppare la botnet la prima decisione che abbiamo preso è stata la gestione dell'architettura.
-Una botnet è una rete composta da uno o più bot che inviano dati al botmaster.\\
+Una botnet è una rete composta da uno o più bot che inviano dati al botmaster, nel nostro caso che comunicano tramite socket TCP.\\
 Abbiamo deciso che i bot sarebbero stati i client mentre il botmaster il server, questo per più ragioni:
 \begin{itemize}
 	\item Ci risultava la scelta più appropriata da un punto di vista ideologico: noi dovevamo avere in mano la situazione e quindi usare il server. Ci sembrava giusto che fossero i bot a contattare il server una volta reperite le informazioni e non il contrario.
@@ -57,10 +57,10 @@ Ad ogni opzione del menù quindi corrisponde un set di informazioni che il bot c
 	
 	\item \textbf{Informazioni sul sistema:}
 	\begin{itemize}
-		\item Nome e versione del sistema operativo installato;\textit{\\platform.uname().system\\platform.uname().release\\platform.uname().version}
-		\item Nome dell'utente corrente;\textit{\\platform.uname().node}
-		\item Architettura del dispositivo;\textit{\\platform.uname().machine}
-		\item Tempo di avvio del sistema.\textit{\\psutil.boot\_time()}
+		\item Nome e versione del sistema operativo installato;
+		\item Nome dell'utente corrente;
+		\item Architettura del dispositivo;
+		\item Tempo di avvio del sistema.
 	\end{itemize}
 	
 	\item \textbf{Informazioni sulla CPU:}
@@ -95,12 +95,28 @@ Ad ogni opzione del menù quindi corrisponde un set di informazioni che il bot c
 	
 \end{enumerate}
 
-Parte in cui parlare della reverse shell, dei comandi e della tecnica (fallente) per sapere la size a priori 
+Abbiamo poi deciso di implementare una \underline{reverse shell}, cioè inviare dei comandi affinché vengano eseguiti sulla macchina del bot client.\\
+In particolare per eseguire il comando a distanza abbiamo fatto uso dei metodi \textit{os.getoutput(...)} e \textit{os.check\_output(...)} passando il comando ottenuto da input dopo aver escluso casi di comandi particolari come il cambio della directory corrente (\textit{cd}).\\
+Abbiamo sfruttato la reverse shell per ottenere informazioni sulla macchina più approfondite laddove le librerie esterne non bastavano e per navigare il file system alla ricerca di file che potessero risultarci appetibili, preferendolo come approccio rispetto ad uno più diretto come il download o la scansione automatica dell'intero file system, che potrebbe diventare un processo troppo pesante e lento su alcune macchine.\\
+Tuttavia senza estensioni ulteriori potevamo solamente stampare e ricavare il contenuto di file di testo, attraverso comandi come more o cat; per questo prima della seconda prova abbiamo anche aggiunto la possibilità di scaricare dei file in modo da poter gestire qualsiasi tipo di file.\\
+
+\section{Tecniche per rendere più solido lo scambio di messaggi}
+Molto del tempo di sviluppo della botnet è stato mirato al renderla il più solida possibile, data la facile tendenza a problemi di comunicazione lavorando con le socket.
+Purtroppo nonostante tutte le misure di precauzione prese, il programma ha dato comunque dei problemi ma il nostro lavoro ha permesso alla situazione di ristabilirsi seppur con la perdita di qualche dato.\\
+Ricordiamo che la receive nelle socket in Python prende una dimensione massima di byte da ricevere, questione che ha portato dubbi e problemi riguardanti la dimensione del buffer scelta. Infatti ci è risultato subito chiaro che, qualsiasi fosse stata la dimensione scelta, alcuni dei messaggi inviati dal bot sarebbero risultati troppo grandi. Per questo abbiamo lavorato in due modi:
+\begin{enumerate}
+	\item Dapprima abbiamo implementato una manovra forzata per cui nel caso in cui si fosse notato un problema di bufferizzazione, avremmo forzato il server tramite un comando a fare una receive extra, in modo da svuotare il buffer;
+	\item Per la seconda prova invece abbiamo lavorato ad un'automatizzazione di questo processo, facendo sì che il client mandasse prima il numero di receive che il server avrebbe dovuto fare (Calcolato a partire dalla dimensione del messaggio chiaramente) e poi il messaggio vero e proprio, permettendo così al server di ricevere in modo adeguato il messaggio.\\
+	Questo scambio di messaggi si può vedere meglio dalla scansione effettuata con Wireshark che è analizzata a fine report.
+\end{enumerate}
+Infine per cercare di salvare situazioni disastrose che si possono verificare in uno scenario reale e che purtroppo si sono verificate anche nelle simulazioni di prova, abbiamo manipolato client e server affinché cerchino sempre di riconnettersi non appena la connessione è persa.
 
 \chapter{Prove di esecuzione}
 
 \section{Prima prova}
 
 \section{Seconda prova}
+
+\chapter{Analisi di frammenti di comunicazione ottenuti con Wireshark}
 
 \end{document}
