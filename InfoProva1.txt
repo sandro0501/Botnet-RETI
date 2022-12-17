@@ -1,0 +1,646 @@
+
+=== INFORMAZIONI SUL SISTEMA === 
+Nome utente: Ubuntu-20-04-LTS
+Sistema operativo: Linux
+Release SO: 5.15.0-52-generic
+Versione SO: #58-Ubuntu SMP Thu Oct 13 08:03:55 UTC 2022
+Architettura: x86_64
+
+=== INFORMAZIONI SULLA CPU === 
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2811.904
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5623.80
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2811.904
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5623.80
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2811.904
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5623.80
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+stepping	: 10
+cpu MHz		: 2811.904
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 4
+core id		: 3
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 5623.80
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+=== INFORMAZIONI SUL TEMPO D'AVVIO === 
+Il sistema e' attivo dal giorno 16/11/2022 dalle ore 9:4:8
+
+=== INFORMAZIONI SULLA MEMORIA RAM === 
+Memoria totale: 3.83GB
+Memoria disponibile: 2.52GB
+Memoria in uso: 1004.59MB
+Percentuale memoria in uso: 34.3%
+
+=== INFORMAZIONI SUL DISCO E SULLE PARTIZIONI === 
+
+=== PARTIZIONI INDIVIDUATE ===
+Nome partizione: /dev/sda3
+Punto di mount: /
+Tipo di file system: ext4
+
+Nome partizione: /dev/loop0
+Punto di mount: /snap/bare/5
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop1
+Punto di mount: /snap/core20/1587
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop2
+Punto di mount: /snap/core20/1695
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop3
+Punto di mount: /snap/firefox/1635
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop5
+Punto di mount: /snap/gnome-3-38-2004/112
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop4
+Punto di mount: /snap/firefox/2067
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop6
+Punto di mount: /snap/gnome-3-38-2004/119
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop7
+Punto di mount: /snap/gtk-common-themes/1535
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop8
+Punto di mount: /snap/snap-store/582
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop9
+Punto di mount: /snap/snap-store/599
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop10
+Punto di mount: /snap/snapd/17336
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop11
+Punto di mount: /snap/snapd/17576
+Tipo di file system: squashfs
+
+Nome partizione: /dev/loop12
+Punto di mount: /snap/snapd-desktop-integration/14
+Tipo di file system: squashfs
+
+Nome partizione: /dev/sda3
+Punto di mount: /var/snap/firefox/common/host-hunspell
+Tipo di file system: ext4
+
+Nome partizione: /dev/sda2
+Punto di mount: /boot/efi
+Tipo di file system: vfat
+
+
+=== DETTAGLIO PARTIZIONI ===
+Nome partizione: /dev/sda3
+Dimensione: 23.94GB
+Spazio occupato: 13.17GB
+Spazio libero: 9.53GB
+Percentuale spazio occupato: 58.0%
+
+Nome partizione: /dev/loop0
+Dimensione: 128.00KB
+Spazio occupato: 128.00KB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop1
+Dimensione: 62.00MB
+Spazio occupato: 62.00MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop2
+Dimensione: 63.25MB
+Spazio occupato: 63.25MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop3
+Dimensione: 163.38MB
+Spazio occupato: 163.38MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop5
+Dimensione: 400.88MB
+Spazio occupato: 400.88MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop4
+Dimensione: 203.75MB
+Spazio occupato: 203.75MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop6
+Dimensione: 346.38MB
+Spazio occupato: 346.38MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop7
+Dimensione: 91.75MB
+Spazio occupato: 91.75MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop8
+Dimensione: 45.88MB
+Spazio occupato: 45.88MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop9
+Dimensione: 46.00MB
+Spazio occupato: 46.00MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop10
+Dimensione: 48.00MB
+Spazio occupato: 48.00MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop11
+Dimensione: 49.75MB
+Spazio occupato: 49.75MB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/loop12
+Dimensione: 384.00KB
+Spazio occupato: 384.00KB
+Spazio libero: 0.00B
+Percentuale spazio occupato: 100.0%
+
+Nome partizione: /dev/sda3
+Dimensione: 23.94GB
+Spazio occupato: 13.17GB
+Spazio libero: 9.53GB
+Percentuale spazio occupato: 58.0%
+
+Nome partizione: /dev/sda2
+Dimensione: 511.96MB
+Spazio occupato: 5.24MB
+Spazio libero: 506.73MB
+Percentuale spazio occupato: 1.0%
+
+
+=== INFORMAZIONI SULLA SCHEDA DI RETE E INTERFACCE DI RETE === 
+Indirizzo MAC scheda di rete: 00:00:79:DC:8B:51:77:5B
+
+Nome interfaccia di rete: lo
+Indirizzo IP: 127.0.0.1
+Network mask: 255.0.0.0
+Broadcast: None
+
+Nome interfaccia di rete: enp0s3
+Indirizzo IP: 10.0.2.15
+Network mask: 255.255.255.0
+Broadcast: 10.0.2.255
+
+Nome interfaccia di rete: enp0s8
+Indirizzo IP: 192.168.1.114
+Network mask: 255.255.255.0
+Broadcast: 192.168.1.255
+
+
+=== STATISTICHE SULLA RETE === 
+Totale byte inviati: 73.59MB
+Totale byte ricevuti: 4.48MB
+Totale pacchetti inviati: 57646
+Totale pacchetti ricevuti: 23828
+Totale errori in ricezione pacchetti: 0
+Totale errori in invio pacchetti: 0
+Totale pacchetti in arrivo persi: 19
+Totale pacchetti in uscita persi: 0
+
+
+=== INFORMAZIONI SULLA SCHEDA DI RETE E INTERFACCE DI RETE === 
+Indirizzo MAC scheda di rete: 00:00:79:DC:8B:51:77:5B
+
+Nome interfaccia di rete: lo
+Indirizzo IP: 127.0.0.1
+Network mask: 255.0.0.0
+Broadcast: None
+
+Nome interfaccia di rete: enp0s3
+Indirizzo IP: 10.0.2.15
+Network mask: 255.255.255.0
+Broadcast: 10.0.2.255
+
+Nome interfaccia di rete: enp0s8
+Indirizzo IP: 192.168.1.114
+Network mask: 255.255.255.0
+Broadcast: 192.168.1.255
+
+
+=== STATISTICHE SULLA RETE === 
+Totale byte inviati: 73.59MB
+Totale byte ricevuti: 4.48MB
+Totale pacchetti inviati: 57665
+Totale pacchetti ricevuti: 23853
+Totale errori in ricezione pacchetti: 0
+Totale errori in invio pacchetti: 0
+Totale pacchetti in arrivo persi: 19
+Totale pacchetti in uscita persi: 0
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+Binotto Team - Erasmo
+Binotto Team - Erasmo.zip
+BotNet MTRS17
+BotNet MTRS17 - Matteo Spavone.zip
+BotNet_TCP_IPino
+BotNet_TCP_IPino - Luigi Penza.zip
+BotNet - ThePhantomThieves - Alex Ciacciarella.zip
+BOTTANET - Dario Franzese
+BOTTANET - Dario Franzese.zip
+Bot Tattici Nucleari
+Bot Tattici Nucleari - Giorgio Longobardo.zip
+Carnevale-Bosco-Granillo
+Carnevale-Bosco-Granillo - Emanuele Granillo.zip
+cookie-thieves-botnet - macro21KGB
+cookie-thieves-botnet - macro21KGB.zip
+DEL PRETE-DEZIO - Paride Del prete
+DEL PRETE-DEZIO - Paride Del prete.zip
+DukeFilecrawler - Versione Finale - Lorenzo Sepe
+DukeFilecrawler - Versione Finale - Lorenzo Sepe.zip
+ElaboratoReti
+ElaboratoReti - Armando Bausano.rar
+Fabrizio - Fabrizio Di Giovanni
+Fabrizio - Fabrizio Di Giovanni.zip
+Hackerman - Fede
+Hackerman - Fede.rar
+(InConnessione...) - Agostino Cesarano
+(InConnessione...) - Agostino Cesarano.zip
+Lohacker - Mathieus99 Container
+Lohacker - Mathieus99 Container.rar
+Lohackers
+Lohackers - Claudio Riccio.zip
+LuFra N86002926 - Luigi Ercolano
+LuFra N86002926 - Luigi Ercolano.zip
+NetworkProject_BeeBeeGee - Fulmine Giallo.zip
+Progetto_BBG
+Progetto_Reti_di_Calcolatori - Davide Maresca
+Progetto_Reti_di_Calcolatori - Davide Maresca.zip
+ProgettoReti - Ferdinando “Fefly” D_Alessandro
+ProgettoReti - Ferdinando “Fefly” D_Alessandro.rar
+ProgettoReti - Francesco Bruno
+ProgettoReti - Francesco Bruno.zip
+Progetto-Reti-main
+ProgettoReti-master
+Progetto-Reti - Tempah
+Progetto-Reti - Tempah.zip
+RFC_Group - Raffaele Milano
+RFC_Group - Raffaele Milano.rar
+StealBot
+StealBot - Valentino Bocchetti.zip
+Stockfish Bait
+StockFish-Bait-2.2
+Stockfish Bait - Giuseppe De Martino.zip
+TMB (Trust Me Bro) - DonnyD.zip
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+bots
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+Desktop
+Documents
+Downloads
+MsgBOTTANET.txt
+Music
+Pictures
+Public
+snap
+Templates
+Videos
+
+
+Comando inviato: more MsgBOTTANET.txt
+Risultato:
+gruppo BOTTANET
+
+
+Comando inviato: cd 
+Risultato:
+Errore
+
+
+Comando inviato: cd Desktop
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+
+
+
+Comando inviato: ls -a
+Risultato:
+.
+..
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: cd Public
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+
+
+
+Comando inviato: ls -a
+Risultato:
+.
+..
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: cd Downloads
+Risultato:
+
+
+
+Comando inviato: ls
+Risultato:
+TMB (Trust Me Bro) - DonnyD.zip
+
+
+Comando inviato: ls -a
+Risultato:
+.
+..
+TMB (Trust Me Bro) - DonnyD.zip
+
+
+Comando inviato: cd ..
+Risultato:
+
+
+
+Comando inviato: ls -a
+Risultato:
+.
+..
+.bash_history
+.bash_logout
+.bashrc
+.cache
+.config
+Desktop
+Documents
+Downloads
+.gnupg
+.lesshst
+.local
+MsgBOTTANET.txt
+Music
+.pam_environment
+.passwords
+Pictures
+.profile
+Public
+.python_history
+snap
+.ssh
+Templates
+.vboxclient-clipboard.pid
+.vboxclient-draganddrop.pid
+.vboxclient-seamless.pid
+.vboxclient-vmsvga-session-tty2.pid
+Videos
+
+
+Comando inviato: cd .passwords
+Risultato:
+[Errno 20] Not a directory: '/home/alessio/.passwords'
+
+
+Comando inviato: cd passwords
+Risultato:
+[Errno 2] No such file or directory: '/home/alessio/passwords'
+
+
+Comando inviato: ls
+Risultato:
+Desktop
+Documents
+Downloads
+MsgBOTTANET.txt
+Music
+Pictures
+Public
+snap
+Templates
+Videos
+
+
+Comando inviato: ls -a
+Risultato:
+.
+..
+.bash_history
+.bash_logout
+.bashrc
+.cache
+.config
+Desktop
+Documents
+Downloads
+.gnupg
+.lesshst
+.local
+MsgBOTTANET.txt
+Music
+.pam_environment
+.passwords
+Pictures
+.profile
+Public
+.python_history
+snap
+.ssh
+Templates
+.vboxclient-clipboard.pid
+.vboxclient-draganddrop.pid
+.vboxclient-seamless.pid
+.vboxclient-vmsvga-session-tty2.pid
+Videos
+
+
+Comando inviato: cd ".passwords"
+Risultato:
+[Errno 2] No such file or directory: '/home/alessio/".passwords"'
+
+
+Comando inviato: ls -l -a
+Risultato:
+totale 116
+drwxr-x--- 16 alessio alessio 4096 nov 16 09:18 .
+drwxr-xr-x  3 root    root    4096 nov 12 08:24 ..
+-rw-------  1 alessio alessio 3135 nov 15 19:11 .bash_history
+-rw-r--r--  1 alessio alessio  220 nov 12 08:24 .bash_logout
+-rw-r--r--  1 alessio alessio 3771 nov 12 08:24 .bashrc
+drwx------ 13 alessio alessio 4096 nov 15 18:48 .cache
+drwx------ 15 alessio alessio 4096 nov 15 18:48 .config
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Desktop
+drwxr-xr-x  3 alessio alessio 4096 nov 15 17:56 Documents
+drwxr-xr-x  2 alessio alessio 4096 nov 16 09:16 Downloads
+drwx------  2 alessio alessio 4096 nov 12 08:53 .gnupg
+-rw-------  1 alessio alessio   20 nov 15 19:11 .lesshst
+drwx------  5 alessio alessio 4096 nov 14 14:29 .local
+-rw-rw-r--  1 alessio alessio   16 nov 16 09:18 MsgBOTTANET.txt
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Music
+-rw-r--r--  1 alessio alessio  354 nov 12 08:55 .pam_environment
+-rw-rw-r--  1 alessio alessio   10 nov 16 09:05 .passwords
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Pictures
+-rw-r--r--  1 alessio alessio  807 nov 12 08:24 .profile
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Public
+-rw-------  1 alessio alessio   89 nov 14 15:00 .python_history
+drwx------  4 alessio alessio 4096 nov 14 14:21 snap
+drwx------  2 alessio alessio 4096 nov 12 08:53 .ssh
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Templates
+-rw-r-----  1 alessio alessio    5 nov 16 09:04 .vboxclient-clipboard.pid
+-rw-r-----  1 alessio alessio    5 nov 16 09:04 .vboxclient-draganddrop.pid
+-rw-r-----  1 alessio alessio    5 nov 16 09:04 .vboxclient-seamless.pid
+-rw-r-----  1 alessio alessio    5 nov 16 09:04 .vboxclient-vmsvga-session-tty2.pid
+drwxr-xr-x  2 alessio alessio 4096 nov 12 08:44 Videos
+
+
+Comando inviato: cat passwords
+Risultato:
+cat: passwords: File o directory non esistente
+
+
+Comando inviato: cat .passwords
+Risultato:
+eCambiata
+
+
