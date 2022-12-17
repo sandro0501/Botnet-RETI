@@ -65,7 +65,7 @@ Ad ogni opzione del menù quindi corrisponde un set di informazioni che il bot c
 	
 	\item \textbf{Informazioni sulla CPU:}
 	\begin{itemize}
-		\item Nome del modello del processore;
+		\item Nome del modello dei processori;
 		\item Numero di core fisici e logici;
 		\item Frequenza di CPU massima, minima e corrente;
 		\item Percentuale di uso della CPU.
@@ -115,7 +115,134 @@ Infine per cercare di salvare situazioni disastrose che si possono verificare in
 
 \section{Prima prova}
 
+Durante la prima prova abbiamo trovato le seguenti informazioni sulla macchina:
+\begin{enumerate}
+	\item
+	\begin{itemize}
+		\item \textbf{Nome utente:} Ubuntu-20-04-LTS
+		\item \textbf{Sistema operativo:} Linux
+		\item \textbf{Versione:} \#58-Ubuntu SMP Thu Oct 13 08:03:55 UTC 2022
+		\item \textbf{Release:} 5.15.0-52-generic
+		\item \textbf{Architettura:} x86\_64
+	\end{itemize}
+	\item La macchina possiede\textbf{ 4 processori uguali}, le cui specifiche sono:
+	\begin{itemize}
+		\item \textbf{Nome del modello:} Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz
+		\item \textbf{Frequenza:} 2811.904 MhZ
+		\item \textbf{Numero di core:} 4
+		\item \textbf{Dimensione della memoria cache:} 8192 KB
+	\end{itemize}
+	\item La macchina è \textbf{attiva dal giorno 16/11/2022 alle ore 09:04:08}
+	\item La memoria RAM ha una \textbf{dimensione di 3.83GB} e nell'istante in cui abbiamo tratto le informazioni aveva
+	\begin{itemize}
+		\item \textbf{Memoria disponibile:} 2.52GB
+		\item \textbf{Memoria in uso:} 1004.59MB
+		\item \textbf{Percentuale memoria in uso:} 34.3%
+	\end{itemize}
+	\item Il disco presenta 16 partizioni, di cui:
+	\begin{itemize}
+		\item Una partizione principale:
+		\begin{itemize}
+			\item \textbf{Nome:} /dev/sda3
+			\item \textbf{Punto di mount:} / (root)
+			\item \textbf{Tipo di file system:} ext4
+			\item \textbf{Spazio occupato:} 13.17GB
+			\item \textbf{Spazio libero:} 9.53GB
+			\item \textbf{Percentuale spazio occupato:} 58.0%
+		\end{itemize}
+		\item Una duplicazione di quest'ultima usata da HunSpell per il funzionamento dello spell check, con \textbf{punto di mount} /var/snap/firefox/common/host-hunspell
+		\item Una partizione di boot:
+		\begin{itemize}
+			\item \textbf{Nome:} /dev/sda2
+			\item \textbf{Punto di mount:} /boot/efi
+			\item \textbf{Dimensione:} 511.96MB
+			\item \textbf{Spazio occupato:} 5.24MB
+			\item \textbf{Spazio libero:} 506.73MB
+			\item \textbf{Percentuale spazio occupato:} 1.0%
+		\end{itemize}
+		\item 13 partizioni di loop generate dall'installazione di snap, tutte con \textbf{punto di mount} /snap/...
+	\end{itemize}
+	\item La scheda di rete ha \textbf{Indirizzo MAC: 00:00:79:DC:8B:51:77:5B} e due interfacce di rete ethernet oltre quella di loopback:
+	\begin{enumerate}
+		\item 
+		\begin{itemize}
+			\item \textbf{Nome:} enp0s3
+			\item \textbf{Indirizzo IP:} 10.0.2.15
+			\item \textbf{Network mask: }255.255.255.0
+			\item \textbf{Broadcast:} 10.0.2.255
+		\end{itemize}
+		\item 
+		\begin{itemize}
+			\item \textbf{Nome:} enp0s8
+			\item \textbf{Indirizzo IP:} 192.168.1.114
+			\item \textbf{Network mask: }255.255.255.0
+			\item \textbf{Broadcast:} 192.168.1.255
+		\end{itemize}
+	\end{enumerate}
+	\item Infine nell'istante in cui abbiamo tratto le informazioni abbiamo trovato queste statistiche di rete:
+	\begin{itemize}
+		\item \textbf{Totale byte inviati:} 73.59MB
+		\item \textbf{Totale byte ricevuti:} 4.48MB
+		\item \textbf{Totale pacchetti inviati:} 57646
+		\item \textbf{Totale pacchetti ricevuti: }23828
+		\item \textbf{Totale errori in ricezione pacchetti:} 0
+		\item \textbf{Totale errori in invio pacchetti:} 0
+		\item \textbf{Totale pacchetti in arrivo persi:} 19
+		\item \textbf{Totale pacchetti in uscita persi:} 0
+	\end{itemize}
+	
+	Inoltre navigando il file system siamo riusciti a trovare il \textbf{file nascosto .passwords} che in quel momento conteneva la \textbf{stringa \textit{"eCambiata"}}, anche se confrontandoci con altri colleghi pare il contenuto originale fosse un altro e che quello che abbiamo trovato fosse il risultato di uno scherzo di un collega.	
+
+\end{enumerate}
+
 \section{Seconda prova}
+La seconda prova riguardava due macchine diverse:
+\subsection{Prima macchina}
+Ci era stato detto che la prima macchina sarebbe stata la stessa della prima prova, ma a giudicare dall'indirizzo fisico della scheda di rete differente, immaginiamo fosse una macchina virtuale clone di quella usata nella prima prova.
+\\Per questo oltre l'\textbf{indirizzo MAC}, variato da 00:00:79:DC:8B:51:77:5B a \textbf{00:00:0D:07:91:5F:74:E4}, solo i dati dinamici sono risultati diversi, come:
+\begin{enumerate}
+	\item Il \textbf{tempo di avvio}, che inizialmente era il \textbf{giorno 13/12/2022 dalle ore 16:28:18}, ma in seguito a problemi tecnici che hanno portato al riavvio della macchina è diventato il \textbf{giorno 13/12/2022 dalle ore 17:23:41}.
+	\item Le partizioni, rimaste 16 ma con delle variazioni tra le partizioni di loop generate da snap.
+	\item L'interfaccia di rete enp0s8, che presentava come \textbf{indirizzo ip 192.168.1.188} invece che 192.168.1.114.
+	\item Le \textbf{statistiche di rete} e sull'\textbf{uso della memoria RAM} che date le circostanze della seconda prova sono aumentate rispetto alla prima, arrivando a:
+	\begin{itemize}
+		\item \textbf{Memoria disponibile:} 2.52GB
+		\item \textbf{Memoria in uso:} 1000.79MB
+		\item \textbf{Percentuale memoria in uso:} 34.2%
+		\item \textbf{Totale byte inviati:} 417.29MB
+		\item \textbf{Totale byte ricevuti:} 287.54MB
+		\item \textbf{Totale pacchetti inviati:} 316075
+		\item \textbf{Totale pacchetti ricevuti:} 245933
+	\end{itemize}
+
+\end{enumerate}
+Navigando il file system abbiamo trovato alcuni file di interesse:
+\begin{itemize}
+	\item Il file \textbf{.profile} all'interno della home (/alessio) che non abbiamo avuto la prontezza di stampare, ma essendo stato modificato l'ultima volta il 12 Novembre immaginiamo contenesse ciò che un normale file .profile contiene in un sistema Linux, cioè variabili di sistema relative all'utente.
+	\item Un file\textbf{ .myPwd} nella home, contenente la stringa \textit{\textit{"SBAGLIATO! VEDI ALTROVE"}}, rimandando alla ricerca di un eventuale altro file contenente delle password, che abbiamo poi scoperto essere presente nella seconda macchina.
+\end{itemize}
+
+\subsection{Seconda macchina}
+La seconda macchina, a giudicare dalle informazioni ritrovate, era una macchina virtuale ottenuta inizialmente clonando la prima macchina. Riportiamo le poche differenze importanti notate nella scheda di rete e nel file system, sorvolando sui vari dati dinamici come le statistiche riportate sopra per la prima macchina.
+\begin{enumerate}
+	\item \textbf{Indirizzo MAC della scheda di rete:} 00:00:1D:1A:D5:F6:EE:3C
+	\item \textbf{Indirizzo IP dell'interfaccia enp0s8:} 192.168.1.224
+\end{enumerate}
+Nel file system i file trovati d'interesse sono:
+\begin{enumerate}
+	\item Il file \textbf{.myPwd}, rimasto invariato.
+	\item Un file \textbf{.profiles} non presente sulla prima macchina, contenente la stringa \textit{"QUASI..."}
+	\item Il file \textbf{.profile}, modificato per contenere la stringa\\\textit{"WHAT? I PUT MY PASSWORDS HERE!}
+	
+	 \textit{AlessioPassword123}
+	 \\\textit{ThisIsMyBestOne!}
+	 \\\textit{isThisAJoke?}
+	 \\\textit{sad@123@ertre@ERTY!"} \\nascosta nel contenuto standard del file generato dal sistema.
+	 
+\end{enumerate}
+
+\subsection{Considerazioni sui risultati}
+Complessivamente siamo soddisfatti dei risultati delle prove perché nonostante ci siano stati dei problemi che hanno portato alla perdita di frammenti di informazioni, siamo riusciti comunque a salvare le informazioni più importanti attraverso le tecniche di recupero preparate.
 
 \chapter{Analisi di frammenti di comunicazione ottenuti con Wireshark}
 
