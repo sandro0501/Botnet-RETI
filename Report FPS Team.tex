@@ -245,5 +245,38 @@ Nel file system i file trovati d'interesse sono:
 Complessivamente siamo soddisfatti dei risultati delle prove perché nonostante ci siano stati dei problemi che hanno portato alla perdita di frammenti di informazioni, siamo riusciti comunque a salvare le informazioni più importanti attraverso le tecniche di recupero preparate.
 
 \chapter{Analisi di frammenti di comunicazione ottenuti con Wireshark}
+Vediamo un frammento di comunicazione, a partire dalla 3-way handshake dell'apertura della connessione fino alla ricezione delle informazioni sul sistema operativo.
+
+\begin{figure}[hp]
+	\centerline{\includegraphics[scale=.5]{WS1}}
+\end{figure}
+
+Prima di tutto abbiamo l'apertura della connessione con la 3-way handshake tipica di TCP, riconoscibile dai pacchetti con i flag [SYN], [SYN, ACK] e [ACK].
+\\Poi per come funziona l'applicativo, la prima cosa che è effettuata automaticamente è l'invio della directory corrente dal client al server.
+
+\begin{figure}[hp]
+	\centerline{\includegraphics[scale=.5]{WS2}}
+\end{figure}
+\begin{enumerate}
+	\setcounter{enumi}{2468}
+	\item Pacchetto client->server in cui è mandata la dimensione del messaggio in numero di pacchetti che deve essere inviato (in questo caso la directory corrente), contiene "1".
+	\item Pacchetto server->client di acknowledgement manuale (ed automatico dato il flag ACK) contenente la stringa "SIZE RICEVUTA".
+	\item Pacchetto client->server di acknowledgement automatico generato da TCP ([ACK]).
+	\item Pacchetto client->server contenente l'effettiva working directory desiderata dal server.
+	\item Pacchetto server->client di acknowledgement ([ACK]).
+\end{enumerate}
+Adesso al gestore del server è presentato il menù con la possibilità di chiedere dati al client e vediamo il funzionamento della richiesta di dati sul sistema operativo.
+\begin{figure}[ht!]
+	\centerline{\includegraphics[scale=.5]{WS3}}
+\end{figure}
+
+\begin{enumerate}
+	\setcounter{enumi}{2884}
+	\item Pacchetto server->client in cui è mandato il comando desiderato, in questo caso "1" che corrisponde alla richiesta di informazioni sul sistema operativo.
+	\item Pacchetto client->server contenente la size in numero di pacchetti del messaggio da inviare, in questo caso "1".
+	\item Pacchetto server->client di acknowledgement manuale contenente "SIZE RICEVUTA".
+	\item Pacchetto client->server contenente l'effettivo messaggio contenente le informazioni sul sistema operativo vittima, a cui seguirà l'ACK del server.
+\end{enumerate}
+
 
 \end{document}
